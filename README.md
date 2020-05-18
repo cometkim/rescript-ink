@@ -51,7 +51,7 @@ Add it to your `bsconfig.json`
 ```diff
   "bs-dependencies": [
 +   "reason-react",
-+   "bs-ink"
++   "reason-ink"
   ]
 ```
 
