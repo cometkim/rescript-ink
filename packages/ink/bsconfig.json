@@ -1,5 +1,6 @@
 {
-  "name": "bs-ink",
+  "name": "reason-ink",
+  "namespace": false,
   "reason": {
     "react-jsx": 3
   },
@@ -11,10 +12,6 @@
     {
       "dir": "src",
       "subdirs": true
-    },
-    {
-      "dir": "examples",
-      "type": "dev"
     }
   ],
   "package-specs": [
@@ -30,6 +27,5 @@
   ],
   "bs-dev-dependencies": [
   ],
-  "namespace": false,
   "refmt": 3
 }
