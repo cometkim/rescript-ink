@@ -1,5 +1,5 @@
 {
-  "name": "bs-ink",
+  "name": "reason-ink",
   "description": "BuckleScript binding for ink",
   "version": "1.0.0",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cometkim/bs-ink.git"
+    "url": "https://github.com/cometkim/reason-ink.git"
   },
   "scripts": {
     "build": "bsb -make-world",
@@ -20,7 +20,8 @@
   },
   "files": [
     "src",
-    "bsconfig.json"
+    "bsconfig.json",
+    "LICENSE"
   ],
   "peerDependencies": {
     "bs-platform": ">=7.3.0",

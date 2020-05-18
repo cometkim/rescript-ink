@@ -1,6 +1,6 @@
-# bs-ink
+# reason-ink
 
-BuckleScript binding for [Ink](https://github.com/vadimdemedes/ink)
+ReasonML (BuckleScript) binding for [Ink](https://github.com/vadimdemedes/ink)
 
 Let's build interactive CLI with React and ReasonML!
 
@@ -43,7 +43,7 @@ Do you find any missing APIs? [Let me know](https://github.com/cometkim/bs-ink/i
 ## Install
 
 ```bash
-yarn add reason-react bs-ink
+yarn add reason-react reason-ink
 ```
 
 Add it to your `bsconfig.json`
