@@ -11,17 +11,18 @@ type keyState = {
 };
 
 type inputHandler = (char, keyState) => unit;
-type inputHandler_ = (string, keyState) => unit;
+type inputAsStringHandler = (string, keyState) => unit;
 
 type options;
 
 [@bs.obj] external makeUseInputOptions: (~isActive: bool=?, unit) => options;
 
 [@bs.module "ink"]
-external useInput_: (inputHandler_, options) => unit = "useInput";
+external useInputAsString: (inputAsStringHandler, options) => unit =
+  "useInput";
 
 let useInput = (inputHandler, ~isActive=?, ()) => {
-  useInput_(
+  useInputAsString(
     (inputAsString, keyState) =>
       inputHandler(inputAsString->String.unsafe_get(0), keyState),
     makeUseInputOptions(~isActive?, ()),
