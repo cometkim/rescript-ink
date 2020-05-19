@@ -1,22 +1,22 @@
 dependencies:
+  ink: 2.7.1_react@16.13.1
   reason-nodejs: 12.0.4_bs-platform@7.3.2
 devDependencies:
   bs-platform: 7.3.2
-  ink: 2.7.1_react@16.13.1
   react: 16.13.1
   reason-react: 0.8.0_bs-platform@7.3.2+react@16.13.1
 lockfileVersion: 5.1
 packages:
   /@types/color-name/1.1.1:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
-  /@types/yoga-layout/1.9.1:
-    dev: true
+  /@types/yoga-layout/1.9.2:
+    dev: false
     resolution:
-      integrity: sha512-OpfgQXWLZn5Dl7mOd8dBNcV8NywXbYYoHjUpa64vJ/RQABaxMzJ5bVicKLGIvIiMnQPtPgKNgXb5jkv9fkOQtw==
+      integrity: sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==
   /ansi-escapes/3.2.0:
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
@@ -24,19 +24,19 @@ packages:
   /ansi-escapes/4.3.1:
     dependencies:
       type-fest: 0.11.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-JWF7ocqNrp8u9oqpgV+wH5ftbt+cfvv+PTjOvKLT3AdYly/LmORARfEVT1iyjwN+4MqE5UmVKoAdIBqeoCHgLA==
   /ansi-regex/4.1.0:
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
       integrity: sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==
   /ansi-regex/5.0.0:
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -44,7 +44,7 @@ packages:
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
@@ -53,31 +53,31 @@ packages:
     dependencies:
       '@types/color-name': 1.1.1
       color-convert: 2.0.1
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
   /arrify/2.0.1:
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
   /astral-regex/1.0.0:
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
       integrity: sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==
   /astral-regex/2.0.0:
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
   /auto-bind/4.0.0:
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -91,19 +91,19 @@ packages:
     dependencies:
       ansi-styles: 4.2.1
       supports-color: 7.1.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
   /ci-info/2.0.0:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
   /cli-cursor/2.1.0:
     dependencies:
       restore-cursor: 2.0.0
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
@@ -111,7 +111,7 @@ packages:
   /cli-cursor/3.1.0:
     dependencies:
       restore-cursor: 3.1.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -120,7 +120,7 @@ packages:
     dependencies:
       slice-ansi: 3.0.0
       string-width: 4.2.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -128,35 +128,35 @@ packages:
   /color-convert/1.9.3:
     dependencies:
       color-name: 1.1.3
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
-    dev: true
+    dev: false
     engines:
       node: '>=7.0.0'
     resolution:
       integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
   /color-name/1.1.3:
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
   /color-name/1.1.4:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
   /emoji-regex/7.0.3:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
   /emoji-regex/8.0.0:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
   /has-flag/4.0.0:
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -181,8 +181,8 @@ packages:
       string-length: 3.1.0
       widest-line: 3.1.0
       wrap-ansi: 6.2.0
-      yoga-layout-prebuilt: 1.9.5
-    dev: true
+      yoga-layout-prebuilt: 1.9.6
+    dev: false
     engines:
       node: '>=8'
     peerDependencies:
@@ -196,28 +196,27 @@ packages:
   /is-ci/2.0.0:
     dependencies:
       ci-info: 2.0.0
-    dev: true
+    dev: false
     hasBin: true
     resolution:
       integrity: sha512-YfJT7rkpQB0updsdHLGWrvhBJfcfzNNawYDNIyQXJz0IViGf75O8EBPKSdvw2rF+LGCsX4FZ8tcr3b19LcZq4w==
   /is-fullwidth-code-point/2.0.0:
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
       integrity: sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
   /is-fullwidth-code-point/3.0.0:
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==
   /js-tokens/4.0.0:
-    dev: true
     resolution:
       integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
   /lodash.throttle/4.1.1:
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
   /log-update/3.4.0:
@@ -225,7 +224,7 @@ packages:
       ansi-escapes: 3.2.0
       cli-cursor: 2.1.0
       wrap-ansi: 5.1.0
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -233,24 +232,22 @@ packages:
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
-    dev: true
     hasBin: true
     resolution:
       integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
   /mimic-fn/1.2.0:
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
       integrity: sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
   /mimic-fn/2.1.0:
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
       integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
   /object-assign/4.1.1:
-    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -258,7 +255,7 @@ packages:
   /onetime/2.0.1:
     dependencies:
       mimic-fn: 1.2.0
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
@@ -266,7 +263,7 @@ packages:
   /onetime/5.1.0:
     dependencies:
       mimic-fn: 2.1.0
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -276,11 +273,9 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
   /react-is/16.13.1:
-    dev: true
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
   /react-reconciler/0.24.0_react@16.13.1:
@@ -290,7 +285,7 @@ packages:
       prop-types: 15.7.2
       react: 16.13.1
       scheduler: 0.18.0
-    dev: true
+    dev: false
     engines:
       node: '>=0.10.0'
     peerDependencies:
@@ -302,7 +297,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.7.2
-    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -330,7 +324,7 @@ packages:
     dependencies:
       onetime: 2.0.1
       signal-exit: 3.0.3
-    dev: true
+    dev: false
     engines:
       node: '>=4'
     resolution:
@@ -339,7 +333,7 @@ packages:
     dependencies:
       onetime: 5.1.0
       signal-exit: 3.0.3
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -348,11 +342,11 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
   /signal-exit/3.0.3:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
   /slice-ansi/3.0.0:
@@ -360,7 +354,7 @@ packages:
       ansi-styles: 4.2.1
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -369,7 +363,7 @@ packages:
     dependencies:
       astral-regex: 1.0.0
       strip-ansi: 5.2.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -379,7 +373,7 @@ packages:
       emoji-regex: 7.0.3
       is-fullwidth-code-point: 2.0.0
       strip-ansi: 5.2.0
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -389,7 +383,7 @@ packages:
       emoji-regex: 8.0.0
       is-fullwidth-code-point: 3.0.0
       strip-ansi: 6.0.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -397,7 +391,7 @@ packages:
   /strip-ansi/5.2.0:
     dependencies:
       ansi-regex: 4.1.0
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -405,7 +399,7 @@ packages:
   /strip-ansi/6.0.0:
     dependencies:
       ansi-regex: 5.0.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -413,13 +407,13 @@ packages:
   /supports-color/7.1.0:
     dependencies:
       has-flag: 4.0.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-oRSIpR8pxT1Wr2FquTNnGet79b3BWljqOuoW/h4oBhxJ/HUbX5nX6JSruTkvXDCFMwDPvsaTTbvMLKZWSy0R5g==
   /type-fest/0.11.0:
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -427,7 +421,7 @@ packages:
   /widest-line/3.1.0:
     dependencies:
       string-width: 4.2.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -437,7 +431,7 @@ packages:
       ansi-styles: 3.2.1
       string-width: 3.1.0
       strip-ansi: 5.2.0
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -447,19 +441,19 @@ packages:
       ansi-styles: 4.2.1
       string-width: 4.2.0
       strip-ansi: 6.0.0
-    dev: true
+    dev: false
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
-  /yoga-layout-prebuilt/1.9.5:
+  /yoga-layout-prebuilt/1.9.6:
     dependencies:
-      '@types/yoga-layout': 1.9.1
-    dev: true
+      '@types/yoga-layout': 1.9.2
+    dev: false
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-+G5Ojl4/sG78mk5masCL3SRaZtkKXRBhMGf5c+4C1j32jN9KpS4lxVFdYyBi15EHN4gMeK5sIRf83T33TOaDkA==
+      integrity: sha512-Wursw6uqLXLMjBAO4SEShuzj8+EJXhCF71/rJ7YndHTkRAYSU0GY3OghRqfAk9HPUAAFMuqp3U1Wl+01vmGRQQ==
 specifiers:
   bs-platform: ^7.3.2
   ink: ^2.7.1
