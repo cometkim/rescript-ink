@@ -1,4 +1,4 @@
-open ReactInk;
+open ReasonInk;
 
 module Root = {
   [@react.component]

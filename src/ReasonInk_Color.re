@@ -1,4 +1,4 @@
-open ReactInk_Style;
+open ReasonInk_Style;
 
 let makeRgbProp = color =>
   switch (color) {

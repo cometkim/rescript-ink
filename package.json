@@ -1,6 +1,6 @@
 {
   "name": "reason-ink",
-  "description": "BuckleScript binding for ink",
+  "description": "ReasonML binding for ink",
   "version": "1.0.0",
   "license": "MIT",
   "author": {

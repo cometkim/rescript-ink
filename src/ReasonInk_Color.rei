@@ -1,4 +1,4 @@
-open ReactInk_Style;
+open ReasonInk_Style;
 
 let makeProps: (
   ~children: React.element,
