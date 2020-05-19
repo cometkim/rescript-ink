@@ -3,6 +3,7 @@
 *.lock
 *.log
 **/lib/bs/
+**/lib/ocaml/
 **/node_modules/**
 
 *.bs.js

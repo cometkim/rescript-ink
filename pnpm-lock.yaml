@@ -1,6 +1,13 @@
 importers:
   .:
-    specifiers: {}
+    devDependencies:
+      '@reason-ink/ink-big-text': 'link:packages/ink-big-text'
+      bs-platform: 7.3.2
+      reason-ink: 'link:packages/ink'
+    specifiers:
+      '@reason-ink/ink-big-text': 'workspace:^1.0.0'
+      bs-platform: ^7.3.2
+      reason-ink: 'workspace:^2.0.0'
   packages/ink:
     dependencies:
       ink: 2.7.1_react@16.13.1
@@ -14,6 +21,20 @@ importers:
       ink: ^2.7.1
       react: ^16.13.1
       reason-nodejs: ^12.0.3
+      reason-react: ^0.8.0
+  packages/ink-big-text:
+    dependencies:
+      ink-big-text: 1.0.1_react@16.13.1
+    devDependencies:
+      bs-platform: 7.3.2
+      react: 16.13.1
+      reason-ink: 'link:../ink'
+      reason-react: 0.8.0_bs-platform@7.3.2+react@16.13.1
+    specifiers:
+      bs-platform: ^7.3.2
+      ink-big-text: ^1.0.1
+      react: ^16.13.1
+      reason-ink: 'workspace:^1.0.0'
       reason-react: ^0.8.0
 lockfileVersion: 5.1
 packages:
@@ -97,6 +118,16 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-seJL5g4anK9la4erv+B2o2sMHQCxDF6OCRl9en3hbaUos/S3JsusQ0sPp4ORsbx5eXfHLYBwPljwKXlgpXtsgQ==
+  /cfonts/2.8.2:
+    dependencies:
+      chalk: 4.0.0
+      window-size: 1.1.1
+    dev: false
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-qF0zbWCLPI4uHhbxP7IPA1nx5SFxfCZdurQjne20faeAOEtiUC4DHpost5sEpP7GNUEfpEI+e3PyLRE9k4KoLw==
   /chalk/3.0.0:
     dependencies:
       ansi-styles: 4.2.1
@@ -106,6 +137,15 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  /chalk/4.0.0:
+    dependencies:
+      ansi-styles: 4.2.1
+      supports-color: 7.1.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /ci-info/2.0.0:
     dev: false
     resolution:
@@ -157,6 +197,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+  /define-property/1.0.0:
+    dependencies:
+      is-descriptor: 1.0.2
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-dp66rz9KY6rTr56NMEybvnm/sOY=
   /emoji-regex/7.0.3:
     dev: false
     resolution:
@@ -171,6 +219,19 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
+  /ink-big-text/1.0.1_react@16.13.1:
+    dependencies:
+      cfonts: 2.8.2
+      prop-types: 15.7.2
+      react: 16.13.1
+    dev: false
+    engines:
+      node: '>=8'
+    peerDependencies:
+      ink: '>=2.0.0'
+      react: '>=16.8.0'
+    resolution:
+      integrity: sha512-4uqTXNzhWyonmT0jVaTm6p6pMro6GgkLtZUfyAk6OcRRNWYLLr89AFBtihW0Sy0pTrGulHiUflvwOCjXxLpTUA==
   /ink/2.7.1_react@16.13.1:
     dependencies:
       ansi-escapes: 4.3.1
@@ -203,6 +264,18 @@ packages:
         optional: true
     resolution:
       integrity: sha512-s7lJuQDJEdjqtaIWhp3KYHl6WV3J04U9zoQ6wVc+Xoa06XM27SXUY57qC5DO46xkF0CfgXMKkKNcgvSu/SAEpA==
+  /is-accessor-descriptor/1.0.0:
+    dependencies:
+      kind-of: 6.0.3
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-m5hnHTkcVsPfqx3AKlyttIPb7J+XykHvJP2B9bZDjlhLIoEq4XoK64Vg7boZlVWYK6LUY94dYPEE7Lh0ZkZKcQ==
+  /is-buffer/1.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
   /is-ci/2.0.0:
     dependencies:
       ci-info: 2.0.0
@@ -210,6 +283,24 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-YfJT7rkpQB0updsdHLGWrvhBJfcfzNNawYDNIyQXJz0IViGf75O8EBPKSdvw2rF+LGCsX4FZ8tcr3b19LcZq4w==
+  /is-data-descriptor/1.0.0:
+    dependencies:
+      kind-of: 6.0.3
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-jbRXy1FmtAoCjQkVmIVYwuuqDFUbaOeDjmed1tOGPrsMhtJA4rD9tkgA0F1qJ3gRFRXcHYVkdeaP50Q5rE/jLQ==
+  /is-descriptor/1.0.2:
+    dependencies:
+      is-accessor-descriptor: 1.0.0
+      is-data-descriptor: 1.0.0
+      kind-of: 6.0.3
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-2eis5WqQGV7peooDyLmNEPUrps9+SXX5c9pL3xEB+4e9HnGuDa7mB7kHxHw4CbqS9k1T2hOH3miL8n8WtiYVtg==
   /is-fullwidth-code-point/2.0.0:
     dev: false
     engines:
@@ -222,9 +313,31 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==
+  /is-number/3.0.0:
+    dependencies:
+      kind-of: 3.2.2
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-JP1iAaR4LPUFYcgQJ2r8fRLXEZU=
   /js-tokens/4.0.0:
     resolution:
       integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+  /kind-of/3.2.2:
+    dependencies:
+      is-buffer: 1.1.6
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
+  /kind-of/6.0.3:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
   /lodash.throttle/4.1.1:
     dev: false
     resolution:
@@ -436,6 +549,16 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-NsmoXalsWVDMGupxZ5R08ka9flZjjiLvHVAWYOKtiKM8ujtZWr9cRffak+uSE48+Ob8ObalXpwyeUiyDD6QFgg==
+  /window-size/1.1.1:
+    dependencies:
+      define-property: 1.0.0
+      is-number: 3.0.0
+    dev: false
+    engines:
+      node: '>= 0.10.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-5D/9vujkmVQ7pSmc0SCBmHXbkv6eaHwXEx65MywhmUMsI8sGqJ972APq1lotfcwMKPFLuCFfL8xGHLIp7jaBmA==
   /wrap-ansi/5.1.0:
     dependencies:
       ansi-styles: 3.2.1

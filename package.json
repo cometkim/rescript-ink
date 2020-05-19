@@ -1,4 +1,14 @@
 {
   "name": "@reason-ink/monorepo",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "format": "bsrefmt --in-place **/*.re"
+  },
+  "devDependencies": {
+    "bs-platform": "^7.3.2",
+    "reason-ink": "workspace:^2.0.0"
+  }
 }
