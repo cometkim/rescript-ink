@@ -36,7 +36,7 @@ module Color = {
     | `ansi256(int)
   ];
 
-  let toString = (color: t) =>
+  let toString = color =>
     switch (color) {
     | `black => Some("black")
     | `red => Some("red")
@@ -56,6 +56,7 @@ module Color = {
     | `magentaBright => Some("magentaBright")
     | `cyanBright => Some("cyanBright")
     | `whiteBright => Some("whiteBright")
+    | `hex(hexString) => Some(hexString)
     | `keyword(keyword) => Some(keyword)
     | _ => None
     };

@@ -1,5 +1,5 @@
 {
-  "name": "@reason-ink/monorepo",
+  "name": "@reason-ink/ink-big-text",
   "namespace": false,
   "reason": {
     "react-jsx": 3
@@ -10,20 +10,8 @@
   ],
   "sources": [
     {
-      "dir": "packages/ink/src",
+      "dir": "src",
       "subdirs": true
-    },
-    {
-      "dir": "packages/ink-big-text/src",
-      "subdirs": true
-    },
-    {
-      "dir": "packages/ink-spinner/src",
-      "subdirs": true
-    },
-    {
-      "dir": "examples",
-      "type": "dev"
     }
   ],
   "package-specs": [
@@ -35,9 +23,7 @@
   "suffix": ".bs.js",
   "bs-dependencies": [
     "reason-react",
-    "reason-nodejs",
-    "@reason-ink/ink-big-text",
-    "@reason-ink/ink-spinner"
+    "reason-ink"
   ],
   "bs-dev-dependencies": [
   ],

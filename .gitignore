@@ -2,7 +2,8 @@
 .merlin
 *.lock
 *.log
-/lib/bs/
-/node_modules/
+**/lib/bs/
+**/lib/ocaml/
+**/node_modules/**
 
 *.bs.js

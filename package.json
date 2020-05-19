@@ -1,39 +1,20 @@
 {
-  "name": "reason-ink",
-  "description": "ReasonML binding for ink",
-  "version": "2.0.0",
-  "license": "MIT",
-  "author": {
-    "name": "Hyeseong Kim",
-    "email": "cometkim.kr@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cometkim/reason-ink.git"
-  },
+  "name": "@reason-ink/monorepo",
+  "private": true,
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
-    "format": "bsrefmt --in-place **/*.re",
-    "prepublishOnly": "yarn build"
-  },
-  "files": [
-    "src",
-    "bsconfig.json",
-    "LICENSE"
-  ],
-  "peerDependencies": {
-    "bs-platform": ">=7.3.0",
-    "reason-react": ">=0.7.0"
-  },
-  "dependencies": {
-    "ink": "^2.7.1",
-    "reason-nodejs": "^12.0.3"
+    "format": "bsrefmt --in-place **/*.re"
   },
   "devDependencies": {
+    "@reason-ink/ink-big-text": "workspace:^1.0.0",
+    "@reason-ink/ink-spinner": "workspace:^1.0.0",
     "bs-platform": "^7.3.2",
+    "ink": "^2.7.1",
+    "ink-big-text": "^1.0.1",
+    "ink-spinner": "^3.0.1",
     "react": "^16.13.1",
-    "reason-react": "^0.8.0"
+    "reason-ink": "workspace:^2.0.0"
   }
 }
