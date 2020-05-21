@@ -1,7 +1,7 @@
 {
   "name": "reason-ink",
   "description": "ReasonML (BuckleScript) binding for ink",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "keywords": [
     "reasonml",
@@ -23,7 +23,7 @@
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
     "format": "bsrefmt --in-place **/*.re",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn clean && yarn build"
   },
   "files": [
     "src",
