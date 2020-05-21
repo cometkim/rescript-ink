@@ -43,8 +43,9 @@ Do you find any missing APIs? [Let me know](https://github.com/cometkim/bs-ink/i
 
 ### :dancers: Community bindings
 
-- [@reason-ink/ink-big-text](packages/ink-big-text) (original is [ink-big-text](https://github.com/sindresorhus/ink-big-text/) by [Sindre Sorhus](https://github.com/sindresorhus))
-- [@reason-ink/ink-spinner](packages/ink-spinner) (original is [ink-spinner](https://github.com/vadimdemedes/ink-spinner/) by [Vadim Demedes](https://github.com/vadimdemedes))
+- [@reason-ink/ink-big-text](./packages/ink-big-text) ([ink-big-text](https://github.com/sindresorhus/ink-big-text))
+- [@reason-ink/ink-spinner](./packages/ink-spinner) ([ink-spinner](https://github.com/vadimdemedes/ink-spinner))
+- [@reason-ink/ink-text-input](./packages/ink-text-input) ([ink-text-iput](https://github.com/vadimdemedes/ink-text-input))
 
 ## Requirements
 
@@ -74,7 +75,7 @@ Add it to your `bsconfig.json`
 ```re
 open ReasonInk;
 
-// Community bindings should have `ReasonInkCommunity_` prefix.
+// Community bindings have `ReasonInkCommunity_` prefix.
 module BigText = ReasonInkCommunity_BigText;
 
 module App = {
@@ -95,7 +96,7 @@ See more in [examples](./examples)
 
 ## Contributing
 
-Any feedbacks are welcome!
+Any feedbacks & contributions are welcome!
 
 See more details in [CONTRIBUTING](./CONTRIBUTING.md)
 
