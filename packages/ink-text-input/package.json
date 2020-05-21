@@ -18,6 +18,9 @@
     "url": "git+https://github.com/cometkim/reason-ink.git",
     "directory": "packages/ink-text-input"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean": "bsb -clean-world",
     "start": "bsb -make-world -w",
