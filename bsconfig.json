@@ -22,6 +22,10 @@
       "subdirs": true
     },
     {
+      "dir": "packages/ink-text-input/src",
+      "subdirs": true
+    },
+    {
       "dir": "examples",
       "type": "dev"
     }
@@ -37,7 +41,8 @@
     "reason-react",
     "reason-nodejs",
     "@reason-ink/ink-big-text",
-    "@reason-ink/ink-spinner"
+    "@reason-ink/ink-spinner",
+    "@reason-ink/ink-text-input"
   ],
   "bs-dev-dependencies": [
   ],

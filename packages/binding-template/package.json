@@ -1,0 +1,8 @@
+{
+  "name": "@reason-ink/binding-template",
+  "private": true,
+  "main": "./src/Index.bs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

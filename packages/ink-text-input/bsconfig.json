@@ -1,0 +1,30 @@
+{
+  "name": "@reason-ink/ink-text-input",
+  "namespace": false,
+  "reason": {
+    "react-jsx": 3
+  },
+  "bsc-flags": [
+    "-bs-no-version-header",
+    "-bs-super-errors"
+  ],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "reason-react"
+  ],
+  "bs-dev-dependencies": [
+  ],
+  "refmt": 3
+}
