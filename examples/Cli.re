@@ -1,6 +1,7 @@
 open ReasonInk;
 
 module BigText = ReasonInkCommunity_BigText;
+module Link = ReasonInkCommunity_Link;
 
 module Root = {
   [@react.component]
@@ -17,6 +18,9 @@ module Root = {
 
     <Box display=`flex flexDirection=`column justifyContent=`spaceBetween>
       <BigText text="Hello, Reason-Ink!" font={Block(`yellowBright, `gray)} />
+      <Link url="https://github.com/cometkim/reason-ink">
+        {React.string("Checkout from GitHub!")}
+      </Link>
       <Box marginTop=5>
         <Color fg={`keyword("orange")} bg=`black>
           {React.string("Press q or Ctrl+C to exit")}

@@ -2,22 +2,26 @@ importers:
   .:
     devDependencies:
       '@reason-ink/ink-big-text': 'link:packages/ink-big-text'
+      '@reason-ink/ink-link': 'link:packages/ink-link'
       '@reason-ink/ink-spinner': 'link:packages/ink-spinner'
       '@reason-ink/ink-text-input': 'link:packages/ink-text-input'
       bs-platform: 7.3.2
       ink: 2.7.1_react@16.13.1
       ink-big-text: 1.0.1_ink@2.7.1+react@16.13.1
+      ink-link: 1.1.0_ink@2.7.1+react@16.13.1
       ink-spinner: 3.0.1_ink@2.7.1+react@16.13.1
       ink-text-input: 3.2.2_ink@2.7.1+react@16.13.1
       react: 16.13.1
       reason-ink: 'link:packages/ink'
     specifiers:
       '@reason-ink/ink-big-text': 'workspace:^1.0.0'
+      '@reason-ink/ink-link': 'workspace:^1.0.0'
       '@reason-ink/ink-spinner': 'workspace:^1.0.0'
       '@reason-ink/ink-text-input': 'workspace:^1.0.0'
       bs-platform: ^7.3.2
       ink: ^2.7.1
       ink-big-text: ^1.0.1
+      ink-link: ^1.1.0
       ink-spinner: ^3.0.1
       ink-text-input: ^3.2.2
       react: ^16.13.1
@@ -280,6 +284,20 @@ packages:
       react: '>=16.8.0'
     resolution:
       integrity: sha512-4uqTXNzhWyonmT0jVaTm6p6pMro6GgkLtZUfyAk6OcRRNWYLLr89AFBtihW0Sy0pTrGulHiUflvwOCjXxLpTUA==
+  /ink-link/1.1.0_ink@2.7.1+react@16.13.1:
+    dependencies:
+      ink: 2.7.1_react@16.13.1
+      prop-types: 15.7.2
+      react: 16.13.1
+      terminal-link: 2.1.1
+    dev: true
+    engines:
+      node: '>=8'
+    peerDependencies:
+      ink: '>=2.0.0'
+      react: '>=16.8.0'
+    resolution:
+      integrity: sha512-a716nYz4YDPu8UOA2PwabTZgTvZa3SYB/70yeXVmTOKFAEdMbJyGSVeNuB7P+aM2olzDj9AGVchA7W5QytF9uA==
   /ink-link/1.1.0_react@16.13.1:
     dependencies:
       prop-types: 15.7.2
@@ -625,7 +643,6 @@ packages:
     dependencies:
       has-flag: 4.0.0
       supports-color: 7.1.0
-    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -634,7 +651,6 @@ packages:
     dependencies:
       ansi-escapes: 4.3.1
       supports-hyperlinks: 2.1.0
-    dev: false
     engines:
       node: '>=8'
     resolution:

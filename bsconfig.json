@@ -42,7 +42,8 @@
     "reason-nodejs",
     "@reason-ink/ink-big-text",
     "@reason-ink/ink-spinner",
-    "@reason-ink/ink-text-input"
+    "@reason-ink/ink-text-input",
+    "@reason-ink/ink-link"
   ],
   "bs-dev-dependencies": [
   ],
