@@ -17,6 +17,9 @@
     "url": "git+https://github.com/cometkim/reason-ink.git",
     "directory": "packages/ink-link"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "src",
     "bsconfig.json"
