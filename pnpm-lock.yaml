@@ -7,7 +7,7 @@ importers:
       '@reason-ink/ink-text-input': 'link:packages/ink-text-input'
       bs-platform: 7.3.2
       ink: 2.7.1_react@16.13.1
-      ink-big-text: 1.0.1_ink@2.7.1+react@16.13.1
+      ink-big-text: 1.1.0_ink@2.7.1+react@16.13.1
       ink-link: 1.1.0_ink@2.7.1+react@16.13.1
       ink-spinner: 3.0.1_ink@2.7.1+react@16.13.1
       ink-text-input: 3.2.2_ink@2.7.1+react@16.13.1
@@ -20,7 +20,7 @@ importers:
       '@reason-ink/ink-text-input': 'workspace:^1.0.0'
       bs-platform: ^7.3.2
       ink: ^2.7.1
-      ink-big-text: ^1.0.1
+      ink-big-text: ^1.1.0
       ink-link: ^1.1.0
       ink-spinner: ^3.0.1
       ink-text-input: ^3.2.2
@@ -42,7 +42,7 @@ importers:
       reason-react: ^0.8.0
   packages/ink-big-text:
     dependencies:
-      ink-big-text: 1.0.1_react@16.13.1
+      ink-big-text: 1.1.0_react@16.13.1
     devDependencies:
       bs-platform: 7.3.2
       react: 16.13.1
@@ -50,7 +50,7 @@ importers:
       reason-react: 0.8.0_bs-platform@7.3.2+react@16.13.1
     specifiers:
       bs-platform: ^7.3.2
-      ink-big-text: ^1.0.1
+      ink-big-text: ^1.1.0
       react: ^16.13.1
       reason-ink: 'workspace:^2.0.0'
       reason-react: ^0.8.0
@@ -257,7 +257,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
-  /ink-big-text/1.0.1_ink@2.7.1+react@16.13.1:
+  /ink-big-text/1.1.0_ink@2.7.1+react@16.13.1:
     dependencies:
       cfonts: 2.8.2
       ink: 2.7.1_react@16.13.1
@@ -270,8 +270,8 @@ packages:
       ink: '>=2.0.0'
       react: '>=16.8.0'
     resolution:
-      integrity: sha512-4uqTXNzhWyonmT0jVaTm6p6pMro6GgkLtZUfyAk6OcRRNWYLLr89AFBtihW0Sy0pTrGulHiUflvwOCjXxLpTUA==
-  /ink-big-text/1.0.1_react@16.13.1:
+      integrity: sha512-Hda0KI01Cgil2XbkoRtKIJHE615chopjNZWNCZAgpAmf1ZuT+0o3dRMXJRO977AEc9zDWoum0cl06Hv3uZhLKg==
+  /ink-big-text/1.1.0_react@16.13.1:
     dependencies:
       cfonts: 2.8.2
       prop-types: 15.7.2
@@ -283,7 +283,7 @@ packages:
       ink: '>=2.0.0'
       react: '>=16.8.0'
     resolution:
-      integrity: sha512-4uqTXNzhWyonmT0jVaTm6p6pMro6GgkLtZUfyAk6OcRRNWYLLr89AFBtihW0Sy0pTrGulHiUflvwOCjXxLpTUA==
+      integrity: sha512-Hda0KI01Cgil2XbkoRtKIJHE615chopjNZWNCZAgpAmf1ZuT+0o3dRMXJRO977AEc9zDWoum0cl06Hv3uZhLKg==
   /ink-link/1.1.0_ink@2.7.1+react@16.13.1:
     dependencies:
       ink: 2.7.1_react@16.13.1
