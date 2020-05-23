@@ -1,0 +1,46 @@
+{
+  "name": "@reason-ink/ink-link",
+  "version": "1.0.0",
+  "description": "ReasonML (BuckleScript) binding for ink-link",
+  "license": "MIT",
+  "keywords": [
+    "ReasonML",
+    "React",
+    "CLI"
+  ],
+  "author": {
+    "name": "Hyeseong Kim",
+    "email": "cometkim.kr@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cometkim/reason-ink.git",
+    "directory": "packages/ink-link"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src",
+    "bsconfig.json"
+  ],
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "start": "bsb -make-world -w",
+    "build": "bsb -make-world",
+    "format": "bsrefmt --in-place **/*.re",
+    "prepublishOnly": "bsb -clean-world -make-world"
+  },
+  "peerDependencies": {
+    "reason-ink": "workspace:^2.0.1"
+  },
+  "dependencies": {
+    "ink-link": "^1.1.0"
+  },
+  "devDependencies": {
+    "bs-platform": "^7.3.2",
+    "react": "^16.13.1",
+    "reason-ink": "workspace:^2.0.1",
+    "reason-react": "^0.8.0"
+  }
+}

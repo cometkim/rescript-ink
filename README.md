@@ -46,6 +46,7 @@ Do you find any missing APIs? [Let me know](https://github.com/cometkim/bs-ink/i
 - [@reason-ink/ink-big-text](./packages/ink-big-text) ([ink-big-text](https://github.com/sindresorhus/ink-big-text))
 - [@reason-ink/ink-spinner](./packages/ink-spinner) ([ink-spinner](https://github.com/vadimdemedes/ink-spinner))
 - [@reason-ink/ink-text-input](./packages/ink-text-input) ([ink-text-iput](https://github.com/vadimdemedes/ink-text-input))
+- [@reason-ink/ink-link](./packages/ink-link) ([ink-link](https://github.com/sindresorhus/ink-link))
 
 ## Requirements
 
