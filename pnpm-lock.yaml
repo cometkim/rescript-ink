@@ -5,12 +5,12 @@ importers:
       '@reason-ink/ink-link': 'link:packages/ink-link'
       '@reason-ink/ink-spinner': 'link:packages/ink-spinner'
       '@reason-ink/ink-text-input': 'link:packages/ink-text-input'
-      bs-platform: 7.3.2
-      ink: 2.7.1_react@16.13.1
-      ink-big-text: 1.1.0_ink@2.7.1+react@16.13.1
-      ink-link: 1.1.0_ink@2.7.1+react@16.13.1
-      ink-spinner: 3.0.1_ink@2.7.1+react@16.13.1
-      ink-text-input: 3.2.2_ink@2.7.1+react@16.13.1
+      bs-platform: 8.2.0
+      ink: 3.0.3_react@16.13.1
+      ink-big-text: 1.2.0_ink@3.0.3+react@16.13.1
+      ink-link: 1.1.0_ink@3.0.3+react@16.13.1
+      ink-spinner: 4.0.0_ink@3.0.3+react@16.13.1
+      ink-text-input: 4.0.0_ink@3.0.3+react@16.13.1
       react: 16.13.1
       reason-ink: 'link:packages/ink'
     specifiers:
@@ -18,25 +18,25 @@ importers:
       '@reason-ink/ink-link': 'workspace:^1.0.0'
       '@reason-ink/ink-spinner': 'workspace:^1.0.0'
       '@reason-ink/ink-text-input': 'workspace:^1.0.0'
-      bs-platform: ^7.3.2
-      ink: ^2.7.1
-      ink-big-text: ^1.1.0
+      bs-platform: ^8.2.0
+      ink: ^3.0.3
+      ink-big-text: ^1.2.0
       ink-link: ^1.1.0
-      ink-spinner: ^3.0.1
-      ink-text-input: ^3.2.2
+      ink-spinner: ^4.0.0
+      ink-text-input: ^4.0.0
       react: ^16.13.1
       reason-ink: 'workspace:^2.0.0'
   packages/ink:
     dependencies:
-      ink: 2.7.1_react@16.13.1
-      reason-nodejs: 12.0.4_bs-platform@7.3.2
+      ink: 3.0.3_react@16.13.1
+      reason-nodejs: 12.0.4_bs-platform@8.2.0
     devDependencies:
-      bs-platform: 7.3.2
+      bs-platform: 8.2.0
       react: 16.13.1
-      reason-react: 0.8.0_bs-platform@7.3.2+react@16.13.1
+      reason-react: 0.8.0_bs-platform@8.2.0+react@16.13.1
     specifiers:
-      bs-platform: ^7.3.2
-      ink: ^2.7.1
+      bs-platform: ^8.2.0
+      ink: ^3.0.3
       react: ^16.13.1
       reason-nodejs: ^12.0.3
       reason-react: ^0.8.0
@@ -101,14 +101,20 @@ packages:
   /@types/color-name/1.1.1:
     resolution:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+  /@types/prop-types/15.7.3:
+    dev: true
+    resolution:
+      integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+  /@types/react/16.9.44:
+    dependencies:
+      '@types/prop-types': 15.7.3
+      csstype: 3.0.2
+    dev: true
+    resolution:
+      integrity: sha512-BtLoJrXdW8DVZauKP+bY4Kmiq7ubcJq+H/aCpRfvPF7RAT3RwR73Sg8szdc2YasbAlWBDrQ6Q+AFM0KwtQY+WQ==
   /@types/yoga-layout/1.9.2:
     resolution:
       integrity: sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==
-  /ansi-escapes/3.2.0:
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==
   /ansi-escapes/4.3.1:
     dependencies:
       type-fest: 0.11.0
@@ -126,13 +132,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
-  /ansi-styles/3.2.1:
-    dependencies:
-      color-convert: 1.9.3
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
   /ansi-styles/4.2.1:
     dependencies:
       '@types/color-name': 1.1.1
@@ -141,11 +140,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
-  /arrify/2.0.1:
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
   /astral-regex/1.0.0:
     engines:
       node: '>=4'
@@ -162,23 +156,42 @@ packages:
     resolution:
       integrity: sha512-Hdw8qdNiqdJ8LqT0iK0sVzkFbzg6fhnQqqfWhBDxcHZvU75+B+ayzTy8x+k5Ix0Y92XOhOUlx74ps+bA6BeYMQ==
   /bs-platform/7.3.2:
+    dev: true
     hasBin: true
     requiresBuild: true
     resolution:
       integrity: sha512-seJL5g4anK9la4erv+B2o2sMHQCxDF6OCRl9en3hbaUos/S3JsusQ0sPp4ORsbx5eXfHLYBwPljwKXlgpXtsgQ==
+  /bs-platform/8.2.0:
+    dev: true
+    hasBin: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-quvmUac/ZxGDsT7L5+6RNXrLPvLHkWFownacaqlwVoyAm770bPyupTRU49ALPGk3HpjfD5eE+lpGdOSPtuwJiA==
   /cfonts/2.8.2:
     dependencies:
       chalk: 4.0.0
       window-size: 1.1.1
+    dev: false
     engines:
       node: '>=10'
     hasBin: true
     resolution:
       integrity: sha512-qF0zbWCLPI4uHhbxP7IPA1nx5SFxfCZdurQjne20faeAOEtiUC4DHpost5sEpP7GNUEfpEI+e3PyLRE9k4KoLw==
+  /cfonts/2.8.6:
+    dependencies:
+      chalk: 4.1.0
+      window-size: 1.1.1
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-CqEyZmBO9teYrondYRE1cP7q95fTg4evianKkYQvHNi0IZpsk+V62RgIQuOm3fRiknISsXvFQeCR352pMyfHlg==
   /chalk/3.0.0:
     dependencies:
       ansi-styles: 4.2.1
       supports-color: 7.1.0
+    dev: false
     engines:
       node: '>=8'
     resolution:
@@ -187,20 +200,27 @@ packages:
     dependencies:
       ansi-styles: 4.2.1
       supports-color: 7.1.0
+    dev: false
     engines:
       node: '>=10'
     resolution:
       integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
+  /chalk/4.1.0:
+    dependencies:
+      ansi-styles: 4.2.1
+      supports-color: 7.1.0
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
   /ci-info/2.0.0:
     resolution:
       integrity: sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
-  /cli-cursor/2.1.0:
-    dependencies:
-      restore-cursor: 2.0.0
+  /cli-boxes/2.2.0:
     engines:
-      node: '>=4'
+      node: '>=6'
     resolution:
-      integrity: sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=
+      integrity: sha512-gpaBrMAizVEANOpfZp/EEUixTXDyGt7DFzdK5hU+UbWt/J0lB0w20ncZj59Z9a93xHb9u12zF5BS6i9RKbtg4w==
   /cli-cursor/3.1.0:
     dependencies:
       restore-cursor: 3.1.0
@@ -209,10 +229,17 @@ packages:
     resolution:
       integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==
   /cli-spinners/1.3.1:
+    dev: false
     engines:
       node: '>=4'
     resolution:
       integrity: sha512-1QL4544moEsDVH9T/l6Cemov/37iv1RtoKf7NJ04A60+4MREXNfx/QvavbH6QoGdsD4N4Mwy49cmaINR/o2mdg==
+  /cli-spinners/2.4.0:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-sJAofoarcm76ZGpuooaO0eDy8saEy+YoZBLjC4h8srt4jeBnkYeOgqxgsJQTpyt2LjI5PTfLJHSL+41Yu4fEJA==
   /cli-truncate/2.1.0:
     dependencies:
       slice-ansi: 3.0.0
@@ -221,11 +248,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-n8fOixwDD6b/ObinzTrp1ZKFzbgvKZvuz/TvejnLn1aQfC6r52XEx85FmuC+3HI+JM7coBRXUvNqEU2PHVrHpg==
-  /color-convert/1.9.3:
+  /code-excerpt/3.0.0:
     dependencies:
-      color-name: 1.1.3
+      convert-to-spaces: 1.0.2
+    engines:
+      node: '>=10'
     resolution:
-      integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
+      integrity: sha512-VHNTVhd7KsLGOqfX3SyeO8RyYPMp1GJOg194VITk04WMYCv4plV68YWe6TJZxd9MhobjtpMRnVky01gqZsalaw==
   /color-convert/2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -233,12 +262,18 @@ packages:
       node: '>=7.0.0'
     resolution:
       integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
-  /color-name/1.1.3:
-    resolution:
-      integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
   /color-name/1.1.4:
     resolution:
       integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+  /convert-to-spaces/1.0.2:
+    engines:
+      node: '>= 4'
+    resolution:
+      integrity: sha1-fj5Iu+bZl7FBfdyihoIEtNPYVxU=
+  /csstype/3.0.2:
+    dev: true
+    resolution:
+      integrity: sha512-ofovWglpqoqbfLNOTBNZLSbMuGrblAf1efvvArGKOZMBrIoJeu5UsAipQolkijtyQx5MtAzT/J9IHj/CEY1mJw==
   /define-property/1.0.0:
     dependencies:
       is-descriptor: 1.0.2
@@ -246,31 +281,24 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-dp66rz9KY6rTr56NMEybvnm/sOY=
-  /emoji-regex/7.0.3:
-    resolution:
-      integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==
   /emoji-regex/8.0.0:
     resolution:
       integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==
+  /escape-string-regexp/2.0.0:
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
   /has-flag/4.0.0:
     engines:
       node: '>=8'
     resolution:
       integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
-  /ink-big-text/1.1.0_ink@2.7.1+react@16.13.1:
-    dependencies:
-      cfonts: 2.8.2
-      ink: 2.7.1_react@16.13.1
-      prop-types: 15.7.2
-      react: 16.13.1
-    dev: true
+  /indent-string/4.0.0:
     engines:
       node: '>=8'
-    peerDependencies:
-      ink: '>=2.0.0'
-      react: '>=16.8.0'
     resolution:
-      integrity: sha512-Hda0KI01Cgil2XbkoRtKIJHE615chopjNZWNCZAgpAmf1ZuT+0o3dRMXJRO977AEc9zDWoum0cl06Hv3uZhLKg==
+      integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==
   /ink-big-text/1.1.0_react@16.13.1:
     dependencies:
       cfonts: 2.8.2
@@ -284,9 +312,23 @@ packages:
       react: '>=16.8.0'
     resolution:
       integrity: sha512-Hda0KI01Cgil2XbkoRtKIJHE615chopjNZWNCZAgpAmf1ZuT+0o3dRMXJRO977AEc9zDWoum0cl06Hv3uZhLKg==
-  /ink-link/1.1.0_ink@2.7.1+react@16.13.1:
+  /ink-big-text/1.2.0_ink@3.0.3+react@16.13.1:
     dependencies:
-      ink: 2.7.1_react@16.13.1
+      cfonts: 2.8.6
+      ink: 3.0.3_react@16.13.1
+      prop-types: 15.7.2
+      react: 16.13.1
+    dev: true
+    engines:
+      node: '>=8'
+    peerDependencies:
+      ink: '>=2.0.0'
+      react: '>=16.8.0'
+    resolution:
+      integrity: sha512-xDfn8oOhiji9c4wojTKSaBnEfgpTTd3KL7jsMYVht4SbpfLdSKvVZiMi3U5v45eSjLm1ycMmeMWAP1G99lWL5Q==
+  /ink-link/1.1.0_ink@3.0.3+react@16.13.1:
+    dependencies:
+      ink: 3.0.3_react@16.13.1
       prop-types: 15.7.2
       react: 16.13.1
       terminal-link: 2.1.1
@@ -311,20 +353,6 @@ packages:
       react: '>=16.8.0'
     resolution:
       integrity: sha512-a716nYz4YDPu8UOA2PwabTZgTvZa3SYB/70yeXVmTOKFAEdMbJyGSVeNuB7P+aM2olzDj9AGVchA7W5QytF9uA==
-  /ink-spinner/3.0.1_ink@2.7.1+react@16.13.1:
-    dependencies:
-      cli-spinners: 1.3.1
-      ink: 2.7.1_react@16.13.1
-      prop-types: 15.7.2
-      react: 16.13.1
-    dev: true
-    engines:
-      node: '>=8'
-    peerDependencies:
-      ink: ^2.0.0
-      react: ^16.8.2
-    resolution:
-      integrity: sha512-AVR4Z/NXDQ7dT5ltWcCzFS9Dd4T8eaO//E2UO8VYNiJcZpPCSJ11o5A0UVPcMlZxGbGD6ikUFDR3ZgPUQk5haQ==
   /ink-spinner/3.0.1_react@16.13.1:
     dependencies:
       cli-spinners: 1.3.1
@@ -338,20 +366,20 @@ packages:
       react: ^16.8.2
     resolution:
       integrity: sha512-AVR4Z/NXDQ7dT5ltWcCzFS9Dd4T8eaO//E2UO8VYNiJcZpPCSJ11o5A0UVPcMlZxGbGD6ikUFDR3ZgPUQk5haQ==
-  /ink-text-input/3.2.2_ink@2.7.1+react@16.13.1:
+  /ink-spinner/4.0.0_ink@3.0.3+react@16.13.1:
     dependencies:
-      chalk: 3.0.0
-      ink: 2.7.1_react@16.13.1
-      prop-types: 15.7.2
+      '@types/react': 16.9.44
+      cli-spinners: 2.4.0
+      ink: 3.0.3_react@16.13.1
       react: 16.13.1
     dev: true
     engines:
-      node: '>=8'
+      node: '>=10'
     peerDependencies:
-      ink: ^2.0.0
-      react: ^16.5.2
+      ink: ^3.0.0-4
+      react: ^16.8.2
     resolution:
-      integrity: sha512-h4EEJYOO88uK16U1mhgmJBMYeEy8ZmkrdV6gybyluCbAOQtAyND/WuRQVIKhe7D2dtYd2wwYTC648nuAxwltPQ==
+      integrity: sha512-Oq2u5SY1qZ61LbzyQReJxpoRmruLcWw3lRb7cq8t3fj9484Eo5HggayyX5OVEcCGURWyyH8kJmFZJgrSGtJqkA==
   /ink-text-input/3.2.2_react@16.13.1:
     dependencies:
       chalk: 3.0.0
@@ -365,29 +393,48 @@ packages:
       react: ^16.5.2
     resolution:
       integrity: sha512-h4EEJYOO88uK16U1mhgmJBMYeEy8ZmkrdV6gybyluCbAOQtAyND/WuRQVIKhe7D2dtYd2wwYTC648nuAxwltPQ==
-  /ink/2.7.1_react@16.13.1:
+  /ink-text-input/4.0.0_ink@3.0.3+react@16.13.1:
+    dependencies:
+      chalk: 4.1.0
+      ink: 3.0.3_react@16.13.1
+      react: 16.13.1
+      type-fest: 0.15.1
+    dev: true
+    engines:
+      node: '>=10'
+    peerDependencies:
+      ink: ^3.0.0-3
+      react: ^16.5.2
+    resolution:
+      integrity: sha512-mzftl3MRUYEi4/lQQzjUGgmPtPIQgGbeedp6G9cDIGTQPMOiaklrCX8zWi9aY5n0OKoJpjmi3TR6eRBNNhCP8Q==
+  /ink/3.0.3_react@16.13.1:
     dependencies:
       ansi-escapes: 4.3.1
-      arrify: 2.0.1
       auto-bind: 4.0.0
-      chalk: 3.0.0
+      chalk: 4.1.0
+      cli-boxes: 2.2.0
       cli-cursor: 3.1.0
       cli-truncate: 2.1.0
+      code-excerpt: 3.0.0
+      indent-string: 4.0.0
       is-ci: 2.0.0
       lodash.throttle: 4.1.1
-      log-update: 3.4.0
-      prop-types: 15.7.2
+      patch-console: 1.0.0
       react: 16.13.1
+      react-devtools-core: 4.8.2
       react-reconciler: 0.24.0_react@16.13.1
       scheduler: 0.18.0
       signal-exit: 3.0.3
       slice-ansi: 3.0.0
+      stack-utils: 2.0.2
       string-length: 3.1.0
+      type-fest: 0.12.0
       widest-line: 3.1.0
       wrap-ansi: 6.2.0
+      ws: 7.3.1
       yoga-layout-prebuilt: 1.9.6
     engines:
-      node: '>=8'
+      node: '>=10'
     peerDependencies:
       '@types/react': '>=16.8.0'
       react: '>=16.8.0'
@@ -395,7 +442,7 @@ packages:
       '@types/react':
         optional: true
     resolution:
-      integrity: sha512-s7lJuQDJEdjqtaIWhp3KYHl6WV3J04U9zoQ6wVc+Xoa06XM27SXUY57qC5DO46xkF0CfgXMKkKNcgvSu/SAEpA==
+      integrity: sha512-lddjjoxYMU6Ldy5fhwKwPJDuhm62F0TwvNnI3DDQ6czZxgW94kyTb4AUX3qSFU7cnoid4yg/uIktr00fI2VRvw==
   /is-accessor-descriptor/1.0.0:
     dependencies:
       kind-of: 6.0.3
@@ -428,11 +475,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-2eis5WqQGV7peooDyLmNEPUrps9+SXX5c9pL3xEB+4e9HnGuDa7mB7kHxHw4CbqS9k1T2hOH3miL8n8WtiYVtg==
-  /is-fullwidth-code-point/2.0.0:
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-o7MKXE8ZkYMWeqq5O+764937ZU8=
   /is-fullwidth-code-point/3.0.0:
     engines:
       node: '>=8'
@@ -463,26 +505,12 @@ packages:
   /lodash.throttle/4.1.1:
     resolution:
       integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
-  /log-update/3.4.0:
-    dependencies:
-      ansi-escapes: 3.2.0
-      cli-cursor: 2.1.0
-      wrap-ansi: 5.1.0
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-ILKe88NeMt4gmDvk/eb615U/IVn7K9KWGkoYbdatQ69Z65nj1ZzjM6fHXfcs0Uge+e+EGnMW7DY4T9yko8vWFg==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
     hasBin: true
     resolution:
       integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
-  /mimic-fn/1.2.0:
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
   /mimic-fn/2.1.0:
     engines:
       node: '>=6'
@@ -493,20 +521,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
-  /onetime/2.0.1:
-    dependencies:
-      mimic-fn: 1.2.0
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=
-  /onetime/5.1.0:
+  /onetime/5.1.1:
     dependencies:
       mimic-fn: 2.1.0
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-5NcSkPHhwTVFIQN+TUqXoS5+dlElHXdpAWu9I0HP20YOtIi+aZ0Ct82jdlILDxjLEAWwvm+qj1m6aEtsDVmm6Q==
+      integrity: sha512-ZpZpjcJeugQfWsfyQlshVoowIIQ1qBGSVll4rfDq6JJVO//fesjoX808hXWfBjY+ROZgpKDI5TRSRBSoJiZ8eg==
+  /patch-console/1.0.0:
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-nxl9nrnLQmh64iTzMfyylSlRozL7kAXIaxw1fVcLYdyhNkJCRUzirRZTikXGJsg+hc4fqpneTK6iU2H1Q8THSA==
   /prop-types/15.7.2:
     dependencies:
       loose-envify: 1.4.0
@@ -514,6 +540,12 @@ packages:
       react-is: 16.13.1
     resolution:
       integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+  /react-devtools-core/4.8.2:
+    dependencies:
+      shell-quote: 1.7.2
+      ws: 7.3.1
+    resolution:
+      integrity: sha512-3Lv3nI8FPAwKqUco35oOlgf+4j8mgYNnIcDv2QTfxEqg2G69q17ZJ8ScU9aBnymS28YC1OW+kTxLmdIQeTN8yg==
   /react-is/16.13.1:
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -535,13 +567,14 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       prop-types: 15.7.2
+    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
-  /reason-nodejs/12.0.4_bs-platform@7.3.2:
+  /reason-nodejs/12.0.4_bs-platform@8.2.0:
     dependencies:
-      bs-platform: 7.3.2
+      bs-platform: 8.2.0
     dev: false
     peerDependencies:
       bs-platform: '>= 7.0.0'
@@ -558,17 +591,20 @@ packages:
       react-dom: ^16.8.1
     resolution:
       integrity: sha512-97AfK3eCF6vfP8rnbq3k6GgXsZt//OiPMINTUk5luJ8W0Wt/JaYsDG6eWKP8Zx3gPpxSU1EPjB1pUm6o6fBnFA==
-  /restore-cursor/2.0.0:
+  /reason-react/0.8.0_bs-platform@8.2.0+react@16.13.1:
     dependencies:
-      onetime: 2.0.1
-      signal-exit: 3.0.3
-    engines:
-      node: '>=4'
+      bs-platform: 8.2.0
+      react: 16.13.1
+    dev: true
+    peerDependencies:
+      bs-platform: ^7.1.1
+      react: ^16.8.1
+      react-dom: ^16.8.1
     resolution:
-      integrity: sha1-n37ih/gv0ybU/RYpI9YhKe7g368=
+      integrity: sha512-97AfK3eCF6vfP8rnbq3k6GgXsZt//OiPMINTUk5luJ8W0Wt/JaYsDG6eWKP8Zx3gPpxSU1EPjB1pUm6o6fBnFA==
   /restore-cursor/3.1.0:
     dependencies:
-      onetime: 5.1.0
+      onetime: 5.1.1
       signal-exit: 3.0.3
     engines:
       node: '>=8'
@@ -580,6 +616,9 @@ packages:
       object-assign: 4.1.1
     resolution:
       integrity: sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
+  /shell-quote/1.7.2:
+    resolution:
+      integrity: sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
   /signal-exit/3.0.3:
     resolution:
       integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
@@ -592,6 +631,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-pSyv7bSTC7ig9Dcgbw9AuRNUb5k5V6oDudjZoMBSr13qpLBG7tB+zgCkARjq7xIUgdz5P1Qe8u+rSGdouOOIyQ==
+  /stack-utils/2.0.2:
+    dependencies:
+      escape-string-regexp: 2.0.0
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-0H7QK2ECz3fyZMzQ8rH0j2ykpfbnd20BFtfg/SqVC2+sCTtcw0aDTGB7dk+de4U4uUeuz6nOtJcrkFFLG1B0Rg==
   /string-length/3.1.0:
     dependencies:
       astral-regex: 1.0.0
@@ -600,15 +646,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Ttp5YvkGm5v9Ijagtaz1BnN+k9ObpvS0eIBblPMp2YWL8FBmi9qblQ9fexc2k/CXFgrTIteU3jAw3payCnwSTA==
-  /string-width/3.1.0:
-    dependencies:
-      emoji-regex: 7.0.3
-      is-fullwidth-code-point: 2.0.0
-      strip-ansi: 5.2.0
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-vafcv6KjVZKSgz06oM/H6GDBrAtz8vdhQakGjFIvNrHA6y3HCF1CInLy+QLq8dTJPQ1b+KDUqDFctkdRW44e1w==
   /string-width/4.2.0:
     dependencies:
       emoji-regex: 8.0.0
@@ -660,6 +697,17 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-OdjXJxnCN1AvyLSzeKIgXTXxV+99ZuXl3Hpo9XpJAv9MBcHrrJOQ5kV7ypXOuQie+AmWG25hLbiKdwYTifzcfQ==
+  /type-fest/0.12.0:
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-53RyidyjvkGpnWPMF9bQgFtWp+Sl8O2Rp13VavmJgfAP9WWG6q6TkrKU8iyJdnwnfgHI6k2hTlgqH4aSdjoTbg==
+  /type-fest/0.15.1:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-n+UXrN8i5ioo7kqT/nF8xsEzLaqFra7k32SEsSPwvXVGyAcRgV/FUQN/sgfptJTR1oRmmq7z4IXMFSM7im7C9A==
   /widest-line/3.1.0:
     dependencies:
       string-width: 4.2.0
@@ -676,15 +724,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-5D/9vujkmVQ7pSmc0SCBmHXbkv6eaHwXEx65MywhmUMsI8sGqJ972APq1lotfcwMKPFLuCFfL8xGHLIp7jaBmA==
-  /wrap-ansi/5.1.0:
-    dependencies:
-      ansi-styles: 3.2.1
-      string-width: 3.1.0
-      strip-ansi: 5.2.0
-    engines:
-      node: '>=6'
-    resolution:
-      integrity: sha512-QC1/iN/2/RPVJ5jYK8BGttj5z83LmSKmvbvrXPNCLZSEb32KKVDJDl/MOt2N01qU2H/FkzEa9PKto1BqDjtd7Q==
   /wrap-ansi/6.2.0:
     dependencies:
       ansi-styles: 4.2.1
@@ -694,6 +733,19 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  /ws/7.3.1:
+    engines:
+      node: '>=8.3.0'
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    resolution:
+      integrity: sha512-D3RuNkynyHmEJIpD2qrgVkc9DQ23OrN/moAwZX4L8DfvszsJxpjQuUq3LMx6HoYji9fbIOBY18XWBsAux1ZZUA==
   /yoga-layout-prebuilt/1.9.6:
     dependencies:
       '@types/yoga-layout': 1.9.2

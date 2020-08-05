@@ -6,35 +6,10 @@ let makeProps =
       ~display: option([ | `flex | `none])=?,
       ~flexGrow: option(float)=?,
       ~flexShrink: option(float)=?,
-      ~flexBasis:
-         option(
-           [
-             | `width(Length.t)
-             | `auto
-             | `fill
-             | `content
-             | `maxContent
-             | `minContent
-             | `fitContent
-           ],
-         )=?,
-      ~flexDirection:
-         option([ | `raw | `rowReverse | `column | `columnReverse])=?,
-      ~alignItems: option([ | `stretch | `flexStart | `center | `flexEnd])=?,
-      ~justifyContent:
-         option(
-           [ | `flexStart | `center | `flexEnd | `spaceBetween | `spaceAround],
-         )=?,
-      ~textWrap:
-         option(
-           [
-             | `wrap
-             | `truncate
-             | `truncateStart
-             | `truncateMiddle
-             | `truncateEnd
-           ],
-         )=?,
+      ~flexBasis: option(flexBasis)=?,
+      ~flexDirection: option(flexDirection)=?,
+      ~alignItems: option(alignItems)=?,
+      ~justifyContent: option(justifyContent)=?,
       ~width: option(Length.t)=?,
       ~minWidth: option(Length.t)=?,
       ~height: option(Length.t)=?,
@@ -53,21 +28,19 @@ let makeProps =
       ~paddingBottom: option(Length.t)=?,
       ~paddingLeft: option(Length.t)=?,
       ~paddingRight: option(Length.t)=?,
+      ~borderStyle: option(borderStyle)=?,
+      ~borderColor: option(ForegroundColor.t)=?,
       // ~transformChildren: option(React.element => React.element)=?,
       (),
     ) => {
   "children": children,
-  "display":
-    switch (display) {
-    | Some(`flex) => Some("flex")
-    | Some(`none) => Some("none")
-    | None => None
-    },
+  "display": display,
   "flexGrow": flexGrow,
   "flexShrink": flexShrink,
   "flexBasis":
     switch (flexBasis) {
     | Some(`width(length)) => Some(string_of_int(length))
+    | Some(`percent(pct)) => Some(pct->Js.Float.toString)
     | Some(`auto) => Some("auto")
     | Some(`fill) => Some("fill")
     | Some(`content) => Some("content")
@@ -76,40 +49,9 @@ let makeProps =
     | Some(`fitContent) => Some("fit-content")
     | None => None
     },
-  "flexDirection":
-    switch (flexDirection) {
-    | Some(`raw) => Some("raw")
-    | Some(`rowReverse) => Some("raw-reverse")
-    | Some(`column) => Some("column")
-    | Some(`columnReverse) => Some("column-reverse")
-    | None => None
-    },
-  "alignItems":
-    switch (alignItems) {
-    | Some(`stretch) => Some("stretch")
-    | Some(`flexStart) => Some("flex-start")
-    | Some(`center) => Some("center")
-    | Some(`flexEnd) => Some("flex-end")
-    | None => None
-    },
-  "justifyContent":
-    switch (justifyContent) {
-    | Some(`flexStart) => Some("flex-start")
-    | Some(`center) => Some("center")
-    | Some(`flexEnd) => Some("flex-end")
-    | Some(`spaceBetween) => Some("space-between")
-    | Some(`spaceAround) => Some("space-around")
-    | None => None
-    },
-  "textWrap":
-    switch (textWrap) {
-    | Some(`wrap) => Some("wrap")
-    | Some(`truncate) => Some("truncate")
-    | Some(`truncateStart) => Some("truncate-start")
-    | Some(`truncateMiddle) => Some("truncate-middle")
-    | Some(`truncateEnd) => Some("truncate-end")
-    | None => None
-    },
+  "flexDirection": flexDirection,
+  "alignItems": alignItems,
+  "justifyContent": justifyContent,
   "width": width,
   "minWidth": minWidth,
   "height": height,
@@ -128,6 +70,8 @@ let makeProps =
   "paddingBottom": paddingBottom,
   "paddingLeft": paddingLeft,
   "paddingRight": paddingRight,
+  "borderStyle": borderStyle,
+  "borderColor": borderColor,
   // "unstable__transformChildren": transformChildren,
 };
 

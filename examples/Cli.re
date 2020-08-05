@@ -22,9 +22,9 @@ module Root = {
         {React.string("Checkout from GitHub!")}
       </Link>
       <Box marginTop=5>
-        <Color fg={`keyword("orange")} bg=`black>
+        <Text color=`orange backgroundColor=`black>
           {React.string("Press q or Ctrl+C to exit")}
-        </Color>
+        </Text>
       </Box>
     </Box>;
   };

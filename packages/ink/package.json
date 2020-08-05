@@ -32,14 +32,14 @@
   ],
   "peerDependencies": {
     "bs-platform": ">=7.3.0",
-    "reason-react": ">=0.7.0"
+    "reason-react": ">=0.8.0"
   },
   "dependencies": {
-    "ink": "^2.7.1",
+    "ink": "^3.0.3",
     "reason-nodejs": "^12.0.3"
   },
   "devDependencies": {
-    "bs-platform": "^7.3.2",
+    "bs-platform": "^8.2.0",
     "react": "^16.13.1",
     "reason-react": "^0.8.0"
   }

@@ -1,7 +1,6 @@
 module App = ReasonInk_App;
 module Box = ReasonInk_Box;
 module Text = ReasonInk_Text;
-module Color = ReasonInk_Color;
 module Hooks = ReasonInk_Hooks;
 
 type renderInstance = {
