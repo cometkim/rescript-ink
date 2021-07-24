@@ -2,7 +2,7 @@
   "name": "@rescript-ink/monorepo",
   "private": true,
   "scripts": {
-    "postinstall": "rescript build -with-deps",
+    "postinstall": "rescript build",
     "build": "rescript build",
     "start": "rescript build -w",
     "clean": "rescript clean",
