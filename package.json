@@ -1,5 +1,5 @@
 {
-  "name": "@reason-ink/monorepo",
+  "name": "@rescript-ink/monorepo",
   "private": true,
   "scripts": {
     "build": "bsb -make-world",
