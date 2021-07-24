@@ -20,7 +20,7 @@
     "start": "rescript build -w",
     "clean": "rescript clean",
     "format": "rescript format **/*.re",
-    "prepack": "yarn build"
+    "prepack": "pnpm build"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
