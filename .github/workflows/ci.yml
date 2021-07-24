@@ -4,7 +4,7 @@ on:
   - pull_request
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code repository
@@ -32,4 +32,4 @@ jobs:
           run_install: true
 
       - name: check changeset
-        run: pnpm ci:changeset
+        run: pnpm changeset status

@@ -7,7 +7,7 @@
     "start": "rescript build -w",
     "clean": "rescript clean",
     "format": "rescript format **/*.res",
-    "ci:chageset": "changeset status",
+    "changeset": "changeset",
     "ci:version": "changeset version && pnpm install"
   },
   "devDependencies": {
