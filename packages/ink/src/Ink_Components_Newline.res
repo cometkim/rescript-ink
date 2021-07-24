@@ -1,5 +1,6 @@
-let makeProps = (~count: option<int>=?, ()) =>
+let makeProps = (~ref: option<Ink_Ref.t>=?, ~count: option<int>=?, ()) =>
   {
+    "ref": ref,
     "count": count,
   }
 

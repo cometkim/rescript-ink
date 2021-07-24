@@ -1,19 +1,21 @@
-module Style = Ink_Style
+include Ink_Style
 
 let makeProps = (
-  ~color: option<Style.color>=?,
-  ~backgroundColor: option<Style.color>=?,
+  ~ref: option<Ink_Ref.t>=?,
+  ~color: option<color>=?,
+  ~backgroundColor: option<color>=?,
   ~dimColor: option<bool>=?,
   ~bold: option<bool>=?,
   ~italic: option<bool>=?,
   ~underline: option<bool>=?,
   ~strikethrough: option<bool>=?,
   ~inverse: option<bool>=?,
-  ~wrap: option<Style.textWrap>=?,
+  ~wrap: option<textWrap>=?,
   ~children: React.element,
   (),
 ) =>
   {
+    "ref": ref,
     "color": color,
     "backgroundColor": backgroundColor,
     "dimColor": dimColor,

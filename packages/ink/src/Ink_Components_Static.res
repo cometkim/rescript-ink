@@ -148,10 +148,12 @@ let convert = (styleProp: option<styleProp>) =>
 let makeProps = (
   ~items: array<'a>,
   ~renderItems: ('a, int) => React.element,
+  ~ref: option<Ink_Ref.t>=?,
   ~style: option<styleProp>=?,
   (),
 ) =>
   {
+    "ref": ref,
     "items": items,
     "children": renderItems,
     "style": style->convert,

@@ -2,6 +2,7 @@ open Ink_Style
 
 let makeProps = (
   ~children,
+  ~ref: option<Ink_Ref.t>=?,
   ~display: option<display>=?,
   ~flexGrow: option<length>=?,
   ~flexShrink: option<length>=?,
@@ -31,6 +32,7 @@ let makeProps = (
 ) =>
   {
     "children": children,
+    "ref": ref,
     "display": display,
     "flexGrow": flexGrow,
     "flexShrink": flexShrink,
