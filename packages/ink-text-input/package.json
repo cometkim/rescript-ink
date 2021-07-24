@@ -23,7 +23,7 @@
     "access": "public"
   },
   "scripts": {
-    "postinstall": "rescript build -with-deps",
+    "postinstall": "rescript build",
     "clean": "rescript clean",
     "start": "rescript build -w",
     "build": "rescript build",
