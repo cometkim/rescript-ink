@@ -1,5 +1,5 @@
 {
-  "name": "@reason-ink/ink-spinner",
+  "name": "@rescript-ink/ink-spinner",
   "namespace": false,
   "reason": {
     "react-jsx": 3
@@ -22,7 +22,7 @@
   ],
   "suffix": ".bs.js",
   "bs-dependencies": [
-    "reason-react"
+    "@rescript/react"
   ],
   "bs-dev-dependencies": [
   ],

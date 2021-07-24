@@ -1,20 +1,21 @@
 {
-  "name": "@reason-ink/ink-link",
+  "name": "@rescript-ink/ink-link",
   "version": "1.0.0",
-  "description": "ReasonML (BuckleScript) binding for ink-link",
+  "description": "ReScript binding for ink-link",
   "license": "MIT",
   "keywords": [
+    "ReScript",
     "ReasonML",
     "React",
     "CLI"
   ],
   "author": {
     "name": "Hyeseong Kim",
-    "email": "cometkim.kr@gmail.com"
+    "email": "hey@hyeseong.kim"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cometkim/reason-ink.git",
+    "url": "git+https://github.com/cometkim/rescript-ink.git",
     "directory": "packages/ink-link"
   },
   "publishConfig": {
@@ -25,22 +26,25 @@
     "bsconfig.json"
   ],
   "scripts": {
-    "clean": "bsb -clean-world",
-    "start": "bsb -make-world -w",
-    "build": "bsb -make-world",
-    "format": "bsrefmt --in-place **/*.re",
-    "prepublishOnly": "bsb -clean-world -make-world"
+    "postinstall": "rescript build -with-deps",
+    "clean": "rescript clean",
+    "start": "rescript build -w",
+    "build": "rescript build",
+    "format": "rescript format **/*.res",
+    "prepack": "yarn build"
   },
   "peerDependencies": {
-    "reason-ink": "workspace:^2.0.1"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
   },
   "dependencies": {
-    "ink-link": "^1.1.0"
+    "ink-link": "^2.0.0"
   },
   "devDependencies": {
-    "bs-platform": "^7.3.2",
-    "react": "^16.13.1",
-    "reason-ink": "workspace:^2.0.1",
-    "reason-react": "^0.8.0"
+    "@rescript/react": "^0.10.3",
+    "rescript": "^9.1.4",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
   }
 }

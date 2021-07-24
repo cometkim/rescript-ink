@@ -7,9 +7,12 @@ type keyState = {
   escape: bool,
   ctrl: bool,
   shift: bool,
+  tab: bool,
+  backspace: bool,
+  delete: bool,
   meta: bool,
-};
+}
 
-type inputHandler = (char, keyState) => unit;
+type inputHandler = (char, keyState) => unit
 
-let useInput: (inputHandler, ~isActive: bool=?, unit) => unit;
+let useInput: (inputHandler, ~isActive: bool=?, unit) => unit

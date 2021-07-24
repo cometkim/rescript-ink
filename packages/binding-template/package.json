@@ -1,5 +1,5 @@
 {
-  "name": "@reason-ink/binding-template",
+  "name": "@rescript-ink/binding-template",
   "private": true,
   "main": "./src/Index.bs.js",
   "scripts": {

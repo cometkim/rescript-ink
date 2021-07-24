@@ -1,5 +1,5 @@
 {
-  "name": "reason-ink",
+  "name": "rescript-ink",
   "namespace": false,
   "reason": {
     "react-jsx": 3
@@ -22,8 +22,7 @@
   ],
   "suffix": ".bs.js",
   "bs-dependencies": [
-    "reason-react",
-    "reason-nodejs"
+    "@rescript/react"
   ],
   "bs-dev-dependencies": [
   ],
