@@ -20,7 +20,6 @@
     "directory": "packages/ink"
   },
   "scripts": {
-    "postinstall": "rescript build -with-deps",
     "build": "rescript build",
     "start": "rescirpt build -w",
     "clean": "rescript clean",
