@@ -6,9 +6,11 @@
     "build": "rescript build",
     "start": "rescript build -w",
     "clean": "rescript clean",
-    "format": "rescript format **/*.res"
+    "format": "rescript format **/*.res",
+    "ci:version": "changeset version && pnpm install"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.16.0",
     "@rescript-ink/ink-big-text": "workspace:*",
     "@rescript-ink/ink-link": "workspace:*",
     "@rescript-ink/ink-spinner": "workspace:*",
