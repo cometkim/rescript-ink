@@ -14,7 +14,7 @@ module Root = {
 
     <Box display=#flex flexDirection=#column justifyContent=#"space-between">
       <BigText text="Hello,\nReScript-Ink!" font={Block(#redBright, #gray)} />
-      <Link url="https://github.com/cometkim/reason-ink">
+      <Link url="https://github.com/cometkim/rescript-ink">
         {React.string("Checkout the repository!")}
       </Link>
       <Text color=#redBright backgroundColor=#black>
