@@ -5,9 +5,9 @@ importers:
   .:
     specifiers:
       '@reason-ink/ink-big-text': workspace:^1.0.0
-      '@reason-ink/ink-spinner': workspace:^1.0.0
       '@reason-ink/ink-text-input': workspace:^1.0.0
       '@rescript-ink/ink-link': workspace:^1.0.0
+      '@rescript-ink/ink-spinner': workspace:^1.0.0
       bs-platform: ^7.3.2
       ink: ^2.7.1
       ink-big-text: ^1.1.0
@@ -18,9 +18,9 @@ importers:
       rescript-ink: workspace:*
     devDependencies:
       '@reason-ink/ink-big-text': link:packages/archived/ink-big-text
-      '@reason-ink/ink-spinner': link:packages/ink-spinner
       '@reason-ink/ink-text-input': link:packages/ink-text-input
       '@rescript-ink/ink-link': link:packages/ink-link
+      '@rescript-ink/ink-spinner': link:packages/ink-spinner
       bs-platform: 7.3.2
       ink: 2.7.1_react@16.13.1
       ink-big-text: 1.1.0_ink@2.7.1+react@16.13.1
@@ -78,17 +78,17 @@ importers:
 
   packages/ink-spinner:
     specifiers:
-      bs-platform: ^7.3.2
-      ink-spinner: ^3.0.1
-      react: ^16.13.1
-      reason-react: ^0.8.0
+      '@rescript/react': ^0.10.3
+      ink: ^3.0.0
+      ink-spinner: ^4.0.2
+      rescript: ^9.1.4
       rescript-ink: workspace:*
     dependencies:
-      ink-spinner: 3.0.1_ink@2.7.1+react@16.13.1
+      ink-spinner: 4.0.2_ink@3.0.9+react@16.13.1
     devDependencies:
-      bs-platform: 7.3.2
-      react: 16.13.1
-      reason-react: 0.8.0_bs-platform@7.3.2+react@16.13.1
+      '@rescript/react': 0.10.3_react@16.13.1
+      ink: 3.0.9_react@16.13.1
+      rescript: 9.1.4
       rescript-ink: link:../ink
 
   packages/ink-text-input:
@@ -254,6 +254,12 @@ packages:
   /cli-spinners/1.3.1:
     resolution: {integrity: sha512-1QL4544moEsDVH9T/l6Cemov/37iv1RtoKf7NJ04A60+4MREXNfx/QvavbH6QoGdsD4N4Mwy49cmaINR/o2mdg==}
     engines: {node: '>=4'}
+    dev: true
+
+  /cli-spinners/2.6.0:
+    resolution: {integrity: sha512-t+4/y50K/+4xcCRosKkA7W4gTr1MySvLV0q+PxmG7FJ5g+66ChKurYjxBCjHggHH3HA5Hh9cy+lcUGWDqVH+4Q==}
+    engines: {node: '>=6'}
+    dev: false
 
   /cli-truncate/2.1.0:
     resolution: {integrity: sha512-n8fOixwDD6b/ObinzTrp1ZKFzbgvKZvuz/TvejnLn1aQfC6r52XEx85FmuC+3HI+JM7coBRXUvNqEU2PHVrHpg==}
@@ -365,6 +371,19 @@ packages:
       ink: 2.7.1_react@16.13.1
       prop-types: 15.7.2
       react: 16.13.1
+    dev: true
+
+  /ink-spinner/4.0.2_ink@3.0.9+react@16.13.1:
+    resolution: {integrity: sha512-vQGmhWUEh3IG1IxK1Hl2w6RfH6aaRIJWw9lrG8CvFFyrQ23UpJ8GClJs5/sFBxkNvsrrK9sKNEGlGnsqTYiUww==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      ink: '>=3.0.5'
+      react: '>=16.8.2'
+    dependencies:
+      cli-spinners: 2.6.0
+      ink: 3.0.9_react@16.13.1
+      react: 16.13.1
+    dev: false
 
   /ink-text-input/3.2.2_ink@2.7.1+react@16.13.1:
     resolution: {integrity: sha512-h4EEJYOO88uK16U1mhgmJBMYeEy8ZmkrdV6gybyluCbAOQtAyND/WuRQVIKhe7D2dtYd2wwYTC648nuAxwltPQ==}

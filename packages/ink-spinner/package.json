@@ -1,39 +1,40 @@
 {
-  "name": "@reason-ink/ink-spinner",
+  "name": "@rescript-ink/ink-spinner",
   "version": "1.0.0",
-  "description": "ReasonML (BuckleScript) binding for ink-spinner",
+  "description": "ReScript binding for ink-spinner",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cometkim/reason-ink.git",
+    "url": "git+https://github.com/cometkim/reason-ink.git",
     "directory": "packages/ink-spinner"
   },
   "author": {
     "name": "Hyeseong Kim",
-    "email": "cometkim.kr@gmail.com"
+    "email": "hey@hyeseong.kim"
   },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "format": "bsrefmt --in-place **/*.re",
-    "prepublishOnly": "yarn build"
+    "postinstall": "rescript build -with-deps",
+    "build": "rescript build",
+    "start": "rescript build -w",
+    "clean": "rescript clean",
+    "format": "rescript format **/*.re",
+    "prepack": "yarn build"
   },
   "peerDependencies": {
-    "bs-platform": ">=7.3.0",
-    "reason-ink": "workspace:^2.0.0",
-    "reason-react": ">=0.7.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
   },
   "dependencies": {
-    "ink-spinner": "^3.0.1"
+    "ink-spinner": "^4.0.2"
   },
   "devDependencies": {
-    "bs-platform": "^7.3.2",
-    "react": "^16.13.1",
-    "rescript-ink": "workspace:*",
-    "reason-react": "^0.8.0"
+    "@rescript/react": "^0.10.3",
+    "rescript": "^9.1.4",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
   }
 }
