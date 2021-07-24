@@ -26,7 +26,6 @@
     "bsconfig.json"
   ],
   "scripts": {
-    "postinstall": "rescript build",
     "clean": "rescript clean",
     "start": "rescript build -w",
     "build": "rescript build",

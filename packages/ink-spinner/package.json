@@ -16,7 +16,6 @@
     "access": "public"
   },
   "scripts": {
-    "postinstall": "rescript build",
     "build": "rescript build",
     "start": "rescript build -w",
     "clean": "rescript clean",
