@@ -1,7 +1,7 @@
-open ReasonInk;
+open Ink;
 
 module BigText = ReasonInkCommunity_BigText;
-module Link = ReasonInkCommunity_Link;
+module Link = InkCommunity_Link;
 
 module Root = {
   [@react.component]
@@ -33,4 +33,4 @@ module Root = {
 let root = <Root />;
 let {waitUntilExit} = root->render(~exitOnCtrlC=true, ());
 
-waitUntilExit();
+waitUntilExit()->ignore;

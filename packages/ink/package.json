@@ -1,7 +1,7 @@
 {
   "name": "rescript-ink",
   "description": "ReScript binding for Ink",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "license": "MIT",
   "keywords": [
     "rescript",
@@ -31,7 +31,7 @@
     "bsconfig.json"
   ],
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "rescript": "^9.1.0"
   },
   "dependencies": {
