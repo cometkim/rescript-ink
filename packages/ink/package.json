@@ -24,7 +24,7 @@
     "build": "rescript build",
     "start": "rescirpt build -w",
     "clean": "rescript clean",
-    "prepack": "yarn clean && yarn build"
+    "prepack": "yarn build"
   },
   "files": [
     "src",

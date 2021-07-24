@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cometkim/reason-ink.git",
+    "url": "git+https://github.com/cometkim/rescript-ink.git",
     "directory": "packages/ink-text-input"
   },
   "publishConfig": {

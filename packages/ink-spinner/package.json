@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "ReScript binding for ink-spinner",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cometkim/reason-ink.git",
-    "directory": "packages/ink-spinner"
-  },
   "author": {
     "name": "Hyeseong Kim",
     "email": "hey@hyeseong.kim"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cometkim/rescript-ink.git",
+    "directory": "packages/ink-spinner"
   },
   "publishConfig": {
     "access": "public"
