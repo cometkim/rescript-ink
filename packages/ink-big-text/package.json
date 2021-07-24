@@ -1,0 +1,51 @@
+{
+  "name": "@rescript-ink/ink-big-text",
+  "version": "1.0.0",
+  "description": "ReScript binding for ink-big-text",
+  "license": "MIT",
+  "keywords": [
+    "ReScript",
+    "reasonml",
+    "react",
+    "ink",
+    "cli"
+  ],
+  "author": {
+    "name": "Hyeseong Kim",
+    "email": "hey@hyeseong.kim"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cometkim/reason-ink.git",
+    "directory": "packages/ink-big-text"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "postinstall": "rescript build -with-deps",
+    "build": "rescript build",
+    "start": "rescript build -w",
+    "clean": "rescript clean",
+    "format": "rescript format **/*.re",
+    "prepack": "yarn build"
+  },
+  "files": [
+    "src",
+    "bsconfig.json"
+  ],
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
+  },
+  "dependencies": {
+    "ink-big-text": "^1.2.0"
+  },
+  "devDependencies": {
+    "@rescript/react": "^0.10.3",
+    "rescript": "^9.1.4",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
+  }
+}
