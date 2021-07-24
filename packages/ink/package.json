@@ -1,9 +1,10 @@
 {
-  "name": "reason-ink",
-  "description": "ReasonML (BuckleScript) binding for ink",
-  "version": "2.0.1",
+  "name": "rescript-ink",
+  "description": "ReScript binding for Ink",
+  "version": "1.0.0-alpha.0",
   "license": "MIT",
   "keywords": [
+    "rescript",
     "reasonml",
     "bucklescript",
     "react",
@@ -11,36 +12,34 @@
   ],
   "author": {
     "name": "Hyeseong Kim",
-    "email": "cometkim.kr@gmail.com"
+    "email": "hey@hyeseong.kim"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cometkim/reason-ink.git",
+    "url": "https://github.com/cometkim/rescript-ink.git",
     "directory": "packages/ink"
   },
   "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "format": "bsrefmt --in-place **/*.re",
-    "prepublishOnly": "yarn clean && yarn build"
+    "postinstall": "rescript build -with-deps",
+    "build": "rescript build",
+    "start": "rescirpt build -w",
+    "clean": "rescript clean",
+    "prepack": "yarn clean && yarn build"
   },
   "files": [
     "src",
-    "bsconfig.json",
-    "LICENSE"
+    "bsconfig.json"
   ],
   "peerDependencies": {
-    "bs-platform": ">=7.3.0",
-    "reason-react": ">=0.7.0"
+    "react": "^17.0.0 || ^18.0.0",
+    "rescript": "^9.1.0"
   },
   "dependencies": {
-    "ink": "^2.7.1",
-    "reason-nodejs": "^12.0.3"
+    "ink": "^3.0.9"
   },
   "devDependencies": {
-    "bs-platform": "^7.3.2",
-    "react": "^16.13.1",
-    "reason-react": "^0.8.0"
+    "@rescript/react": "^0.10.3",
+    "react": "^17.0.2",
+    "rescript": "^9.1.4"
   }
 }

@@ -19,6 +19,6 @@
     "ink-spinner": "^3.0.1",
     "ink-text-input": "^3.2.2",
     "react": "^16.13.1",
-    "reason-ink": "workspace:^2.0.0"
+    "rescript-ink": "workspace:*"
   }
 }
