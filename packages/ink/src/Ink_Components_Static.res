@@ -1,6 +1,7 @@
 open Ink_Style
 
 type styleProp = {
+  position: option<position>,
   textWrap: option<textWrap>,
   marginTop: option<length>,
   marginBottom: option<length>,
@@ -28,6 +29,7 @@ type styleProp = {
 
 @obj
 external makeStyleProp: (
+  ~position: position=?,
   ~textWrap: textWrap=?,
   ~marginTop: length=?,
   ~marginBottom: length=?,
@@ -55,6 +57,7 @@ external makeStyleProp: (
 ) => styleProp = ""
 
 type style = {
+  position: option<position>,
   textWrap: option<textWrap>,
   marginTop: option<length>,
   marginBottom: option<length>,
@@ -84,6 +87,7 @@ let convert = (styleProp: option<styleProp>) =>
   switch styleProp {
   | None => None
   | Some({
+      position,
       textWrap,
       marginTop,
       marginBottom,
@@ -109,6 +113,7 @@ let convert = (styleProp: option<styleProp>) =>
       borderColor,
     }) =>
     Some({
+      position: position,
       textWrap: textWrap,
       marginTop: marginTop,
       marginBottom: marginBottom,
