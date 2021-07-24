@@ -20,4 +20,4 @@ If any useful Ink components/hooks that don't have binding yet, please submit an
 
 ## Help to improve the quality of bindings
 
-Maintainer(Hyeseong) is new to ReasonML. If you have any idea how to write bindings effectively or improve API in ReasonML style, suggestions are will be appreciated.
+If you have any idea how to write bindings effectively or improve API in ReScript style, suggestions are will be appreciated.

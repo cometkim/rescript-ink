@@ -1,6 +1,6 @@
 {
   "name": "rescript-ink",
-  "description": "ReScript binding for Ink",
+  "description": "ReScript bindings for Ink",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
