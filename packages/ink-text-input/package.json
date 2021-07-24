@@ -1,9 +1,10 @@
 {
-  "name": "@reason-ink/ink-text-input",
+  "name": "@rescript-ink/ink-text-input",
   "version": "1.0.0",
   "description": "",
   "license": "MIT",
   "keywords": [
+    "ReScript",
     "reasonml",
     "react",
     "ink",
@@ -11,7 +12,7 @@
   ],
   "author": {
     "name": "Hyeseong Kim",
-    "email": "cometkim.kr@gmail.com"
+    "email": "hey@hyeseong.kim"
   },
   "repository": {
     "type": "git",
@@ -22,26 +23,29 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "bsb -clean-world",
-    "start": "bsb -make-world -w",
-    "build": "bsb -make-world",
-    "format": "bsrefmt --in-place **/*.re",
-    "prepublishOnly": "pnpm run clean && pnpm run build"
+    "postinstall": "rescript build -with-deps",
+    "clean": "rescript clean",
+    "start": "rescript build -w",
+    "build": "rescript build",
+    "format": "rescript format **/*.res",
+    "prepack": "yarn build"
   },
   "files": [
     "src",
     "bsconfig.json"
   ],
   "peerDependencies": {
-    "reason-ink": "workspace:^2.0.1"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
   },
   "dependencies": {
-    "ink-text-input": "^3.2.2"
+    "ink-text-input": "^4.0.1"
   },
   "devDependencies": {
-    "bs-platform": "^7.3.2",
-    "react": "^16.13.1",
-    "rescript-ink": "workspace:*",
-    "reason-react": "^0.8.0"
+    "@rescript/react": "^0.10.3",
+    "rescript": "^9.1.4",
+    "rescript-ink": "workspace:^1.0.0",
+    "ink": "^3.0.0"
   }
 }

@@ -11,7 +11,7 @@
     "@reason-ink/ink-big-text": "workspace:^1.0.0",
     "@rescript-ink/ink-link": "workspace:^1.0.0",
     "@rescript-ink/ink-spinner": "workspace:^1.0.0",
-    "@reason-ink/ink-text-input": "workspace:^1.0.0",
+    "@rescript-ink/ink-text-input": "workspace:^1.0.0",
     "bs-platform": "^7.3.2",
     "ink": "^2.7.1",
     "ink-big-text": "^1.1.0",

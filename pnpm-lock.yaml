@@ -5,9 +5,9 @@ importers:
   .:
     specifiers:
       '@reason-ink/ink-big-text': workspace:^1.0.0
-      '@reason-ink/ink-text-input': workspace:^1.0.0
       '@rescript-ink/ink-link': workspace:^1.0.0
       '@rescript-ink/ink-spinner': workspace:^1.0.0
+      '@rescript-ink/ink-text-input': workspace:^1.0.0
       bs-platform: ^7.3.2
       ink: ^2.7.1
       ink-big-text: ^1.1.0
@@ -18,9 +18,9 @@ importers:
       rescript-ink: workspace:*
     devDependencies:
       '@reason-ink/ink-big-text': link:packages/archived/ink-big-text
-      '@reason-ink/ink-text-input': link:packages/ink-text-input
       '@rescript-ink/ink-link': link:packages/ink-link
       '@rescript-ink/ink-spinner': link:packages/ink-spinner
+      '@rescript-ink/ink-text-input': link:packages/ink-text-input
       bs-platform: 7.3.2
       ink: 2.7.1_react@16.13.1
       ink-big-text: 1.1.0_ink@2.7.1+react@16.13.1
@@ -82,7 +82,7 @@ importers:
       ink: ^3.0.0
       ink-spinner: ^4.0.2
       rescript: ^9.1.4
-      rescript-ink: workspace:*
+      rescript-ink: workspace:^1.0.0
     dependencies:
       ink-spinner: 4.0.2_ink@3.0.9+react@16.13.1
     devDependencies:
@@ -93,17 +93,17 @@ importers:
 
   packages/ink-text-input:
     specifiers:
-      bs-platform: ^7.3.2
-      ink-text-input: ^3.2.2
-      react: ^16.13.1
-      reason-react: ^0.8.0
-      rescript-ink: workspace:*
+      '@rescript/react': ^0.10.3
+      ink: ^3.0.0
+      ink-text-input: ^4.0.1
+      rescript: ^9.1.4
+      rescript-ink: workspace:^1.0.0
     dependencies:
-      ink-text-input: 3.2.2_ink@2.7.1+react@16.13.1
+      ink-text-input: 4.0.1_ink@3.0.9+react@16.13.1
     devDependencies:
-      bs-platform: 7.3.2
-      react: 16.13.1
-      reason-react: 0.8.0_bs-platform@7.3.2+react@16.13.1
+      '@rescript/react': 0.10.3_react@16.13.1
+      ink: 3.0.9_react@16.13.1
+      rescript: 9.1.4
       rescript-ink: link:../ink
 
 packages:
@@ -216,6 +216,7 @@ packages:
     dependencies:
       ansi-styles: 4.2.1
       supports-color: 7.1.0
+    dev: true
 
   /chalk/4.0.0:
     resolution: {integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==}
@@ -396,6 +397,20 @@ packages:
       ink: 2.7.1_react@16.13.1
       prop-types: 15.7.2
       react: 16.13.1
+    dev: true
+
+  /ink-text-input/4.0.1_ink@3.0.9+react@16.13.1:
+    resolution: {integrity: sha512-wiqkrB2tgnCnv51r2LpNLVfgrd/V+UXF3ccry+/Q7on9CBt8LVavX6NDYRMdXljuM+CcFV/sVro0bCr5oxB05w==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      ink: ^3.0.0-3
+      react: ^16.5.2
+    dependencies:
+      chalk: 4.1.1
+      ink: 3.0.9_react@16.13.1
+      react: 16.13.1
+      type-fest: 0.15.1
+    dev: false
 
   /ink/2.7.1_react@16.13.1:
     resolution: {integrity: sha512-s7lJuQDJEdjqtaIWhp3KYHl6WV3J04U9zoQ6wVc+Xoa06XM27SXUY57qC5DO46xkF0CfgXMKkKNcgvSu/SAEpA==}
@@ -806,6 +821,11 @@ packages:
   /type-fest/0.12.0:
     resolution: {integrity: sha512-53RyidyjvkGpnWPMF9bQgFtWp+Sl8O2Rp13VavmJgfAP9WWG6q6TkrKU8iyJdnwnfgHI6k2hTlgqH4aSdjoTbg==}
     engines: {node: '>=10'}
+
+  /type-fest/0.15.1:
+    resolution: {integrity: sha512-n+UXrN8i5ioo7kqT/nF8xsEzLaqFra7k32SEsSPwvXVGyAcRgV/FUQN/sgfptJTR1oRmmq7z4IXMFSM7im7C9A==}
+    engines: {node: '>=10'}
+    dev: false
 
   /type-fest/0.21.3:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
