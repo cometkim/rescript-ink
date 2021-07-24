@@ -77,7 +77,7 @@ type style = {
   minHeight: option<length>,
   dispay: option<display>,
   borderStyle: option<borderStyle>,
-  borderColor: option<color>,
+  borderColor: option<string>,
 }
 
 let convert = (styleProp: option<styleProp>) =>
@@ -141,14 +141,17 @@ let convert = (styleProp: option<styleProp>) =>
       minHeight: minHeight,
       dispay: dispay,
       borderStyle: borderStyle,
-      borderColor: borderColor,
+      borderColor: switch borderColor {
+      | Some(borderColor) => Some(borderColor->Color.toString)
+      | None => None
+      },
     })
   }
 
 let makeProps = (
+  ~ref: option<Ink_Ref.t>=?,
   ~items: array<'a>,
   ~renderItems: ('a, int) => React.element,
-  ~ref: option<Ink_Ref.t>=?,
   ~style: option<styleProp>=?,
   (),
 ) =>

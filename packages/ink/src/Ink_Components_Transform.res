@@ -1,10 +1,11 @@
 let makeProps = (
+  ~ref: option<Ink_Ref.t>,
   ~children: React.element,
   ~transform: string => string,
-  ~ref: option<Ink_Ref.r>,
   (),
 ) =>
   {
+    "ref": ref,
     "children": children,
     "transform": transform,
   }

@@ -16,8 +16,14 @@ let makeProps = (
 ) =>
   {
     "ref": ref,
-    "color": color,
-    "backgroundColor": backgroundColor,
+    "color": switch color {
+    | Some(color) => Some(color->Color.toString)
+    | None => None
+    },
+    "backgroundColor": switch backgroundColor {
+    | Some(backgroundColor) => Some(backgroundColor->Color.toString)
+    | None => None
+    },
     "dimColor": dimColor,
     "bold": bold,
     "intalic": italic,

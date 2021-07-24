@@ -1,3 +1,7 @@
+type length = int
+
+type percent = float
+
 type textWrap = [
   | #wrap
   | #end
@@ -13,30 +17,58 @@ type position = [
   | #relative
 ]
 
-type color = [
-  | #black
-  | #red
-  | #green
-  | #yellow
-  | #blue
-  | #magenta
-  | #cyan
-  | #white
-  | #gray
-  | #grey
-  | #blackBright
-  | #redBright
-  | #greenBright
-  | #yellowBright
-  | #blueBright
-  | #magentaBright
-  | #cyanBright
-  | #whiteBright
-]
+module Color = {
+  type t = [
+    | #black
+    | #red
+    | #green
+    | #yellow
+    | #blue
+    | #magenta
+    | #cyan
+    | #white
+    | #gray
+    | #grey
+    | #blackBright
+    | #redBright
+    | #greenBright
+    | #yellowBright
+    | #blueBright
+    | #magentaBright
+    | #cyanBright
+    | #whiteBright
+    | #hex(string)
+    | #rgb(int, int, int)
+    | #ansi256(int)
+  ]
 
-type length = int
+  let toString = t =>
+    switch t {
+    | #black => "black"
+    | #red => "red"
+    | #green => "green"
+    | #yellow => "yellow"
+    | #blue => "blue"
+    | #magenta => "magenta"
+    | #cyan => "cyan"
+    | #white => "white"
+    | #gray => "gray"
+    | #grey => "grey"
+    | #blackBright => "blackBright"
+    | #redBright => "redBright"
+    | #greenBright => "greenBright"
+    | #yellowBright => "yellowBright"
+    | #blueBright => "blueBright"
+    | #magentaBright => "magentaBright"
+    | #cyanBright => "cyanBright"
+    | #whiteBright => "whiteBright"
+    | #hex(hex) => hex
+    | #rgb(r, g, b) => `rgb(${r->string_of_int}, ${g->string_of_int}, ${b->string_of_int})`
+    | #ansi256(ansi) => ansi->string_of_int
+    }
+}
 
-type percent = float
+type color = Color.t
 
 type content = [
   | #content

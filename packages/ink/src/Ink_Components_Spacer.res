@@ -1,4 +1,4 @@
-let makeProps = (~ref: option<Ink_Ref.t>=?) =>
+let makeProps = (~ref: option<Ink_Ref.t>=?, ()) =>
   {
     "ref": ref,
   }
