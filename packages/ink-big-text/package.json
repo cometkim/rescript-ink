@@ -34,17 +34,17 @@
     "bsconfig.json"
   ],
   "peerDependencies": {
+    "ink": "^3.0.0",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
-    "rescript-ink": "workspace:^1.0.0",
-    "ink": "^3.0.0"
+    "rescript-ink": "workspace:^1.0.0"
   },
   "dependencies": {
     "ink-big-text": "^1.2.0"
   },
   "devDependencies": {
     "@rescript/react": "^0.10.3",
+    "ink": "^3.0.0",
     "rescript": "^9.1.4",
-    "rescript-ink": "workspace:^1.0.0",
-    "ink": "^3.0.0"
+    "rescript-ink": "workspace:^1.0.0"
   }
 }
