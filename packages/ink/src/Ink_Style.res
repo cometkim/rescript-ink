@@ -2,6 +2,11 @@ type length = int
 
 type percent = float
 
+type size = [
+  | #length(length)
+  | #percent(percent)
+]
+
 type textWrap = [
   | #wrap
   | #end
@@ -84,31 +89,30 @@ type display = [
 ]
 
 type alignItems = [
-  | #row
-  | #column
-  | #"row-reverse"
-  | #"column-reverse"
-]
-
-type alignSelf = [
   | #"flex-start"
   | #center
   | #"flex-end"
-  | #stretch
+]
+
+type alignSelf = [
+  | #auto
+  | #"flex-start"
+  | #center
+  | #"flex-end"
 ]
 
 type justifyContent = [
   | #"flex-start"
+  | #center
   | #"flex-end"
   | #"space-between"
   | #"space-around"
-  | #center
 ]
 
 type flexDirection = [
   | #row
-  | #column
   | #"row-reverse"
+  | #column
   | #"column-reverse"
 ]
 
