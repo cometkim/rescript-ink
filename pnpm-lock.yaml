@@ -52,12 +52,12 @@ importers:
       ink: ^3.0.0
       ink-big-text: ^1.2.0
       rescript: ^9.1.4
-      rescript-ink: workspace:^1.0.0
+      rescript-ink: workspace:^1.1.0
     dependencies:
-      ink-big-text: 1.2.0_ink@3.0.9
+      ink-big-text: 1.2.0_ink@3.0.9+react@17.0.2
     devDependencies:
-      '@rescript/react': 0.10.3
-      ink: 3.0.9
+      '@rescript/react': 0.10.3_react@17.0.2
+      ink: 3.0.9_react@17.0.2
       rescript: 9.1.4
       rescript-ink: link:../ink
 
@@ -67,12 +67,12 @@ importers:
       ink: ^3.0.0
       ink-link: ^2.0.0
       rescript: ^9.1.4
-      rescript-ink: workspace:^1.0.0
+      rescript-ink: workspace:^1.1.0
     dependencies:
-      ink-link: 2.0.0_ink@3.0.9
+      ink-link: 2.0.0_ink@3.0.9+react@17.0.2
     devDependencies:
-      '@rescript/react': 0.10.3
-      ink: 3.0.9
+      '@rescript/react': 0.10.3_react@17.0.2
+      ink: 3.0.9_react@17.0.2
       rescript: 9.1.4
       rescript-ink: link:../ink
 
@@ -82,12 +82,12 @@ importers:
       ink: ^3.0.0
       ink-spinner: ^4.0.2
       rescript: ^9.1.4
-      rescript-ink: workspace:^1.0.0
+      rescript-ink: workspace:^1.1.0
     dependencies:
-      ink-spinner: 4.0.2_ink@3.0.9
+      ink-spinner: 4.0.2_ink@3.0.9+react@17.0.2
     devDependencies:
-      '@rescript/react': 0.10.3
-      ink: 3.0.9
+      '@rescript/react': 0.10.3_react@17.0.2
+      ink: 3.0.9_react@17.0.2
       rescript: 9.1.4
       rescript-ink: link:../ink
 
@@ -97,12 +97,12 @@ importers:
       ink: ^3.0.0
       ink-text-input: ^4.0.1
       rescript: ^9.1.4
-      rescript-ink: workspace:^1.0.0
+      rescript-ink: workspace:^1.1.0
     dependencies:
-      ink-text-input: 4.0.1_ink@3.0.9
+      ink-text-input: 4.0.1_ink@3.0.9+react@17.0.2
     devDependencies:
-      '@rescript/react': 0.10.3
-      ink: 3.0.9
+      '@rescript/react': 0.10.3_react@17.0.2
+      ink: 3.0.9_react@17.0.2
       rescript: 9.1.4
       rescript-ink: link:../ink
 
@@ -344,13 +344,6 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.11.1
-    dev: true
-
-  /@rescript/react/0.10.3:
-    resolution: {integrity: sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==}
-    peerDependencies:
-      react: '>=16.8.1'
-      react-dom: '>=16.8.1'
     dev: true
 
   /@rescript/react/0.10.3_react@17.0.2:
@@ -879,18 +872,6 @@ packages:
     resolution: {integrity: sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg==}
     engines: {node: '>=8'}
 
-  /ink-big-text/1.2.0_ink@3.0.9:
-    resolution: {integrity: sha512-xDfn8oOhiji9c4wojTKSaBnEfgpTTd3KL7jsMYVht4SbpfLdSKvVZiMi3U5v45eSjLm1ycMmeMWAP1G99lWL5Q==}
-    engines: {node: '>=8'}
-    peerDependencies:
-      ink: '>=2.0.0'
-      react: '>=16.8.0'
-    dependencies:
-      cfonts: 2.9.3
-      ink: 3.0.9
-      prop-types: 15.7.2
-    dev: false
-
   /ink-big-text/1.2.0_ink@3.0.9+react@17.0.2:
     resolution: {integrity: sha512-xDfn8oOhiji9c4wojTKSaBnEfgpTTd3KL7jsMYVht4SbpfLdSKvVZiMi3U5v45eSjLm1ycMmeMWAP1G99lWL5Q==}
     engines: {node: '>=8'}
@@ -902,19 +883,6 @@ packages:
       ink: 3.0.9_react@17.0.2
       prop-types: 15.7.2
       react: 17.0.2
-    dev: true
-
-  /ink-link/2.0.0_ink@3.0.9:
-    resolution: {integrity: sha512-1Ic1uU1df+2ThYUE6n04RXNs7eqQOSmxBlSbOKHIM3biLAkvyaAxzXAI4tOjWZBrS6mP1wZBEGxAH5LozQbeJg==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      ink: '>=3.0.0'
-      react: '>=16.8.0'
-    dependencies:
-      ink: 3.0.9
-      prop-types: 15.7.2
-      terminal-link: 2.1.1
-    dev: false
 
   /ink-link/2.0.0_ink@3.0.9+react@17.0.2:
     resolution: {integrity: sha512-1Ic1uU1df+2ThYUE6n04RXNs7eqQOSmxBlSbOKHIM3biLAkvyaAxzXAI4tOjWZBrS6mP1wZBEGxAH5LozQbeJg==}
@@ -927,9 +895,8 @@ packages:
       prop-types: 15.7.2
       react: 17.0.2
       terminal-link: 2.1.1
-    dev: true
 
-  /ink-spinner/4.0.2_ink@3.0.9:
+  /ink-spinner/4.0.2_ink@3.0.9+react@17.0.2:
     resolution: {integrity: sha512-vQGmhWUEh3IG1IxK1Hl2w6RfH6aaRIJWw9lrG8CvFFyrQ23UpJ8GClJs5/sFBxkNvsrrK9sKNEGlGnsqTYiUww==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -937,10 +904,11 @@ packages:
       react: '>=16.8.2'
     dependencies:
       cli-spinners: 2.6.0
-      ink: 3.0.9
+      ink: 3.0.9_react@17.0.2
+      react: 17.0.2
     dev: false
 
-  /ink-text-input/4.0.1_ink@3.0.9:
+  /ink-text-input/4.0.1_ink@3.0.9+react@17.0.2:
     resolution: {integrity: sha512-wiqkrB2tgnCnv51r2LpNLVfgrd/V+UXF3ccry+/Q7on9CBt8LVavX6NDYRMdXljuM+CcFV/sVro0bCr5oxB05w==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -948,47 +916,10 @@ packages:
       react: ^16.5.2
     dependencies:
       chalk: 4.1.1
-      ink: 3.0.9
+      ink: 3.0.9_react@17.0.2
+      react: 17.0.2
       type-fest: 0.15.1
     dev: false
-
-  /ink/3.0.9:
-    resolution: {integrity: sha512-BN+SyJ1rLbKzGPxGYkk22dYB0b58OtyMI4uN0dYucQ8MlIu5TpXJzaP6Bt8Mgqi1dkNZT55bjGyZ2iVLTkJ70w==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': '>=16.8.0'
-      react: '>=16.8.0'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      ansi-escapes: 4.3.2
-      auto-bind: 4.0.0
-      chalk: 4.1.1
-      cli-boxes: 2.2.1
-      cli-cursor: 3.1.0
-      cli-truncate: 2.1.0
-      code-excerpt: 3.0.0
-      indent-string: 4.0.0
-      is-ci: 2.0.0
-      lodash: 4.17.21
-      patch-console: 1.0.0
-      react-devtools-core: 4.14.0
-      react-reconciler: 0.24.0
-      scheduler: 0.18.0
-      signal-exit: 3.0.3
-      slice-ansi: 3.0.0
-      stack-utils: 2.0.3
-      string-width: 4.2.2
-      type-fest: 0.12.0
-      widest-line: 3.1.0
-      wrap-ansi: 6.2.0
-      ws: 7.5.3
-      yoga-layout-prebuilt: 1.10.0
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-    dev: true
 
   /ink/3.0.9_react@17.0.2:
     resolution: {integrity: sha512-BN+SyJ1rLbKzGPxGYkk22dYB0b58OtyMI4uN0dYucQ8MlIu5TpXJzaP6Bt8Mgqi1dkNZT55bjGyZ2iVLTkJ70w==}
@@ -1449,18 +1380,6 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-
-  /react-reconciler/0.24.0:
-    resolution: {integrity: sha512-gAGnwWkf+NOTig9oOowqid9O0HjTDC+XVGBCAmJYYJ2A2cN/O4gDdIuuUQjv8A4v6GDwVfJkagpBBLW5OW9HSw==}
-    engines: {node: '>=0.10.0'}
-    peerDependencies:
-      react: ^16.0.0
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      prop-types: 15.7.2
-      scheduler: 0.18.0
-    dev: true
 
   /react-reconciler/0.24.0_react@17.0.2:
     resolution: {integrity: sha512-gAGnwWkf+NOTig9oOowqid9O0HjTDC+XVGBCAmJYYJ2A2cN/O4gDdIuuUQjv8A4v6GDwVfJkagpBBLW5OW9HSw==}
