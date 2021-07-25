@@ -8,7 +8,7 @@
     "clean": "rescript clean",
     "format": "rescript format **/*.res",
     "changeset": "changeset",
-    "ci:version": "changeset version && pnpm install"
+    "ci:version": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.16.0",
