@@ -1,6 +1,13 @@
 # @rescript-ink/ink-spinner
 
+## 1.1.1
+
+### Patch Changes
+
+- ffdca0a: specify package files
+
 ## 1.1.0
+
 ### Minor Changes
 
 - d66a789: Fix wrong style bindings
