@@ -30,6 +30,3 @@ jobs:
         with:
           version: 6.10.3
           run_install: true
-
-      - name: check changeset
-        run: pnpm changeset -- status
