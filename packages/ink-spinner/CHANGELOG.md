@@ -1,5 +1,18 @@
 # @rescript-ink/ink-spinner
 
+## 2.0.0
+
+### Minor Changes
+
+- 5889e6c: upgrade rescript version
+- eae9ef0: upgrade ink and component depdendencies
+
+### Patch Changes
+
+- Updated dependencies [5889e6c]
+- Updated dependencies [eae9ef0]
+  - rescript-ink@1.2.0
+
 ## 1.1.1
 
 ### Patch Changes
