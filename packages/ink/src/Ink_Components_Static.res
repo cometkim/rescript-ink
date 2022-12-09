@@ -113,19 +113,19 @@ let convert = (styleProp: option<styleProp>) =>
       borderColor,
     }) =>
     Some({
-      position: position,
-      textWrap: textWrap,
-      marginTop: marginTop,
-      marginBottom: marginBottom,
-      marginLeft: marginLeft,
-      marginRight: marginRight,
-      paddingTop: paddingTop,
-      paddingBottom: paddingBottom,
-      paddingLeft: paddingLeft,
-      paddingRight: paddingRight,
-      flexGrow: flexGrow,
-      flexShrink: flexShrink,
-      flexDirection: flexDirection,
+      position,
+      textWrap,
+      marginTop,
+      marginBottom,
+      marginLeft,
+      marginRight,
+      paddingTop,
+      paddingBottom,
+      paddingLeft,
+      paddingRight,
+      flexGrow,
+      flexShrink,
+      flexDirection,
       flexBasis: switch flexBasis {
       | Some(#length(len)) => Some(string_of_int(len))
       | Some(#percent(pct)) => Some(Js.Float.toString(pct) ++ "%")
@@ -137,15 +137,15 @@ let convert = (styleProp: option<styleProp>) =>
       | Some(#"fit-content") => Some("fit-content")
       | None => None
       },
-      alignItems: alignItems,
-      alignSelf: alignSelf,
-      justifyContent: justifyContent,
-      width: width,
-      height: height,
-      minWidth: minWidth,
-      minHeight: minHeight,
-      dispay: dispay,
-      borderStyle: borderStyle,
+      alignItems,
+      alignSelf,
+      justifyContent,
+      width,
+      height,
+      minWidth,
+      minHeight,
+      dispay,
+      borderStyle,
       borderColor: switch borderColor {
       | Some(borderColor) => Some(borderColor->Color.toString)
       | None => None
