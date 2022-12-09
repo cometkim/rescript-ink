@@ -32,9 +32,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Check that the Yarn files don't change on new installs
+      - name: Install dependencies and check no updates on lockfile
         shell: bash
-        run: yarn install --immutable --immutable-cache
+        run: yarn install --immutable
 
       - name: Check format
         run: yarn format -check -all
