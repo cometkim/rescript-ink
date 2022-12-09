@@ -19,7 +19,7 @@
     "@rescript-ink/ink-spinner": "workspace:*",
     "@rescript-ink/ink-text-input": "workspace:*",
     "@rescript/react": "^0.10.3",
-    "ink": "^3.0.9",
+    "ink": "^3.2.0",
     "ink-big-text": "^1.2.0",
     "ink-link": "^2.0.0",
     "react": "^17.0.2",

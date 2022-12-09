@@ -34,7 +34,7 @@
     "rescript": "^9.1.0 || ^10.0.0"
   },
   "dependencies": {
-    "ink": "^3.0.9"
+    "ink": "^3.2.0"
   },
   "devDependencies": {
     "@rescript/react": "^0.10.3",

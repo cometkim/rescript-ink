@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@rescript/react": "^0.10.3",
-    "ink": "^3.0.0",
+    "ink": "^3.2.0",
     "rescript": "^10.0.1",
     "rescript-ink": "workspace:^1.1.0"
   }
