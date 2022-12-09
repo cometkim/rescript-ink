@@ -4,10 +4,7 @@
   "reason": {
     "react-jsx": 3
   },
-  "bsc-flags": [
-    "-bs-no-version-header",
-    "-bs-super-errors"
-  ],
+  "suffix": ".bs.js",
   "sources": [
     {
       "dir": "src",
@@ -20,11 +17,9 @@
       "in-source": true
     }
   ],
-  "suffix": ".bs.js",
   "bs-dependencies": [
     "@rescript/react"
   ],
   "bs-dev-dependencies": [
-  ],
-  "refmt": 3
+  ]
 }
