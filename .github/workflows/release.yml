@@ -1,4 +1,4 @@
-name: CI
+name: Release
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  check:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code repository
