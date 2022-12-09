@@ -1,6 +1,6 @@
 {
   "name": "@rescript-ink/ink-big-text",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "ReScript binding for ink-big-text",
   "license": "MIT",
   "keywords": [
@@ -36,7 +36,7 @@
     "ink": "^3.0.0",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "rescript": "^9.1.0 || ^10.0.0",
-    "rescript-ink": "workspace:^1.1.0"
+    "rescript-ink": "workspace:^1.2.0"
   },
   "dependencies": {
     "ink-big-text": "^1.2.0"
@@ -45,6 +45,6 @@
     "@rescript/react": "^0.10.3",
     "ink": "^3.2.0",
     "rescript": "^10.0.1",
-    "rescript-ink": "workspace:^1.1.0"
+    "rescript-ink": "workspace:^1.2.0"
   }
 }
