@@ -36,6 +36,7 @@
   "peerDependencies": {
     "ink": "^3.0.0",
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "rescript": "^9.1.0 || ^10.0.0",
     "rescript-ink": "workspace:^1.1.0"
   },
   "dependencies": {
@@ -44,7 +45,7 @@
   "devDependencies": {
     "@rescript/react": "^0.10.3",
     "ink": "^3.0.0",
-    "rescript": "^9.1.4",
+    "rescript": "^10.0.1",
     "rescript-ink": "workspace:^1.1.0"
   }
 }

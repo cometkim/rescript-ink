@@ -23,7 +23,7 @@
     "ink-big-text": "^1.2.0",
     "ink-link": "^2.0.0",
     "react": "^17.0.2",
-    "rescript": "^9.1.4",
+    "rescript": "^10.0.1",
     "rescript-ink": "workspace:*"
   },
   "packageManager": "yarn@3.3.0"
