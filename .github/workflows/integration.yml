@@ -22,7 +22,7 @@ jobs:
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+        run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
 
       - uses: actions/cache@v3
         id: yarn-cache
@@ -37,7 +37,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Check format
-        run: yarn format -check -all
+        run: yarn format -check
 
       - name: Build packages
         run: yarn build
