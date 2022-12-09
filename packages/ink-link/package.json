@@ -29,8 +29,7 @@
     "clean": "rescript clean",
     "start": "rescript build -w",
     "build": "rescript build",
-    "format": "rescript format **/*.res",
-    "prepack": "pnpm build"
+    "prepack": "yarn build"
   },
   "peerDependencies": {
     "ink": "^3.0.0",

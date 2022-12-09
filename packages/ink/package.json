@@ -23,7 +23,7 @@
     "build": "rescript build",
     "start": "rescirpt build -w",
     "clean": "rescript clean",
-    "prepack": "pnpm build"
+    "prepack": "yarn build"
   },
   "files": [
     "src",

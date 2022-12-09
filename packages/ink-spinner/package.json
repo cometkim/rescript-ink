@@ -19,8 +19,7 @@
     "build": "rescript build",
     "start": "rescript build -w",
     "clean": "rescript clean",
-    "format": "rescript format **/*.re",
-    "prepack": "pnpm build"
+    "prepack": "yarn build"
   },
   "files": [
     "src",
