@@ -36,8 +36,8 @@ jobs:
         shell: bash
         run: yarn install --immutable
 
-      - name: Check format
-        run: yarn format -check
-
       - name: Build packages
         run: yarn build
+
+      - name: Check format
+        run: yarn format -check
