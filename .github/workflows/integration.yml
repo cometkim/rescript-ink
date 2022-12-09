@@ -38,6 +38,3 @@ jobs:
 
       - name: Build packages
         run: yarn build
-
-      - name: Check format
-        run: yarn format -check
