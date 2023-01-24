@@ -33,4 +33,4 @@ module Borders = {
   }
 }
 
-let _ = render(<Borders />, ~exitOnCtrlC=true, ())
+let _ = render(<Borders />, ())
