@@ -33,7 +33,10 @@ let makeProps = (
   {
     "ref": ref,
     "children": children,
-    "display": display,
+    "display": switch display {
+    | None => Some(#flex)
+    | display => display
+    },
     "flexGrow": flexGrow,
     "flexShrink": flexShrink,
     "flexBasis": switch flexBasis {
