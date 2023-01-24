@@ -1,6 +1,7 @@
 include Ink_Style
 
 let makeProps = (
+  ~key: option<string>=?,
   ~ref: option<Ink_Ref.t>=?,
   ~color: option<color>=?,
   ~backgroundColor: option<color>=?,
@@ -15,6 +16,7 @@ let makeProps = (
   (),
 ) =>
   {
+    "key": key,
     "ref": ref,
     "color": switch color {
     | Some(color) => Some(color->Color.toString)

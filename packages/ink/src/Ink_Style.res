@@ -11,10 +11,11 @@ module Size = {
     | #percent(percent)
   ]
 
-  let unwrap = t => switch t {
-  | #length(length) => length->unwrap
-  | #percent(percent) => percent->unwrap
-  }
+  let unwrap = t =>
+    switch t {
+    | #length(length) => length->unwrap
+    | #percent(percent) => percent->unwrap
+    }
 }
 
 type size = Size.t

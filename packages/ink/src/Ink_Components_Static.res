@@ -154,6 +154,7 @@ let convert = (styleProp: option<styleProp>) =>
   }
 
 let makeProps = (
+  ~key: option<string>=?,
   ~ref: option<Ink_Ref.t>=?,
   ~items: array<'a>,
   ~renderItems: ('a, int) => React.element,
@@ -161,6 +162,7 @@ let makeProps = (
   (),
 ) =>
   {
+    "key": key,
     "ref": ref,
     "items": items,
     "children": renderItems,

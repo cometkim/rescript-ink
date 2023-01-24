@@ -1,6 +1,7 @@
 open Ink_Style
 
 let makeProps = (
+  ~key: option<string>=?,
   ~ref: option<Ink_Ref.t>=?,
   ~children: option<React.element>=?,
   ~display: option<display>=?,
@@ -34,6 +35,7 @@ let makeProps = (
   (),
 ) =>
   {
+    "key": key,
     "ref": ref,
     "children": children,
     "display": switch display {
