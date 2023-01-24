@@ -3,4 +3,5 @@ type t = {
   disableFocus: unit => unit,
   focusNext: unit => unit,
   focusPrevious: unit => unit,
+  focus: string => unit,
 }
