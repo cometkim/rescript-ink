@@ -1,5 +1,18 @@
 # @rescript-ink/ink-text-input
 
+## 3.0.0
+
+### Patch Changes
+
+- Updated dependencies [69b5a17]
+- Updated dependencies [7bfabff]
+- Updated dependencies [033a4bf]
+- Updated dependencies [042e1a5]
+- Updated dependencies [2818d0b]
+- Updated dependencies [f5f69d5]
+- Updated dependencies [5ff7c4c]
+  - rescript-ink@1.3.0
+
 ## 2.0.0
 
 ### Minor Changes
