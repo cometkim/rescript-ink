@@ -1,10 +1,11 @@
 type props
 
-@obj external makeProps: (~isActive: bool=?, ~autoFocus: bool=?, unit) => props = ""
+@obj external makeProps: (~id: string=?, ~isActive: bool=?, ~autoFocus: bool=?, unit) => props = ""
 
 type handle = {isFocused: bool}
 
-@module("ink") external _useFocus: props => handle = "useFocus"
+@module("ink") external useFocus: props => handle = "useFocus"
 
-let useFocus = (~isActive: option<bool>=?, ~autoFocus: option<bool>=?, ()) =>
-  _useFocus(makeProps(~isActive?, ~autoFocus?, ()))
+@inline
+let useFocus = (~id: option<string>=?, ~isActive: option<bool>=?, ~autoFocus: option<bool>=?, ()) =>
+  useFocus(makeProps(~id?, ~isActive?, ~autoFocus?, ()))
