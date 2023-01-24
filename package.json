@@ -26,5 +26,5 @@
     "rescript": "^10.0.1",
     "rescript-ink": "workspace:*"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.1"
 }
