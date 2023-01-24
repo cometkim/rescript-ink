@@ -1,11 +1,23 @@
+type any
+external unwrap: 'a => any = "%identity"
+
 type length = int
 
 type percent = float
 
-type size = [
-  | #length(length)
-  | #percent(percent)
-]
+module Size = {
+  type t = [
+    | #length(length)
+    | #percent(percent)
+  ]
+
+  let unwrap = t => switch t {
+  | #length(length) => length->unwrap
+  | #percent(percent) => percent->unwrap
+  }
+}
+
+type size = Size.t
 
 type textWrap = [
   | #wrap
@@ -127,13 +139,8 @@ type borderStyle = [
   | #arrow
 ]
 
-type width = [
-  | #auto
-  | #percent(percent)
-  | #length(length)
-]
-
 type flexBasis = [
+  | #auto
   | content
-  | width
+  | size
 ]

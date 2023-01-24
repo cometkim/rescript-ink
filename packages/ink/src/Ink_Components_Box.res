@@ -9,6 +9,7 @@ let makeProps = (
   ~flexBasis: option<flexBasis>=?,
   ~flexDirection: option<flexDirection>=?,
   ~alignItems: option<alignItems>=?,
+  ~alignSelf: option<alignSelf>=?,
   ~justifyContent: option<justifyContent>=?,
   ~width: option<size>=?,
   ~minWidth: option<[#length(length)]>=?,
@@ -39,8 +40,14 @@ let makeProps = (
     | None => Some(#flex)
     | display => display
     },
-    "flexGrow": flexGrow,
-    "flexShrink": flexShrink,
+    "flexGrow": switch flexGrow {
+    | None => Some(0)
+    | flexGrow => flexGrow
+    },
+    "flexShrink": switch flexShrink {
+    | None => Some(1)
+    | flexShrink => flexShrink
+    },
     "flexBasis": switch flexBasis {
     | Some(#length(len)) => Some(string_of_int(len))
     | Some(#percent(pct)) => Some(Js.Float.toString(pct) ++ "%")
@@ -54,11 +61,27 @@ let makeProps = (
     },
     "flexDirection": flexDirection,
     "alignItems": alignItems,
+    "alignSelf": switch alignSelf {
+    | None => Some(#auto)
+    | alignSelf => alignSelf
+    },
     "justifyContent": justifyContent,
-    "width": width,
-    "minWidth": minWidth,
-    "height": height,
-    "minHeight": minHeight,
+    "width": switch width {
+    | Some(width) => Some(width->Size.unwrap)
+    | None => None
+    },
+    "minWidth": switch minWidth {
+    | Some(minWidth) => Some(minWidth->Size.unwrap)
+    | None => None
+    },
+    "height": switch height {
+    | Some(height) => Some(height->Size.unwrap)
+    | None => None
+    },
+    "minHeight": switch minHeight {
+    | Some(minHeight) => Some(minHeight->Size.unwrap)
+    | None => None
+    },
     "margin": margin,
     "marginX": marginX,
     "marginY": marginY,
