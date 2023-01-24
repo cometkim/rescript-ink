@@ -28,6 +28,8 @@ let makeProps = (
   ~paddingBottom: option<length>=?,
   ~paddingLeft: option<length>=?,
   ~paddingRight: option<length>=?,
+  ~borderStyle: option<borderStyle>=?,
+  ~borderColor: option<color>=?,
   (),
 ) =>
   {
@@ -71,6 +73,11 @@ let makeProps = (
     "paddingBottom": paddingBottom,
     "paddingLeft": paddingLeft,
     "paddingRight": paddingRight,
+    "borderStyle": borderStyle,
+    "borderColor": switch borderColor {
+    | Some(color) => Some(color->Color.toString)
+    | None => None
+    },
   }
 
 @module("ink") external make: React.component<'a> = "Box"
