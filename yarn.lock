@@ -362,7 +362,7 @@ __metadata:
   dependencies:
     "@rescript/react": ^0.10.3
     ink: ^3.2.0
-    ink-link: ^2.0.0
+    ink-link: ^2.0.1
     rescript: ^10.0.1
     rescript-ink: "workspace:^1.2.0"
   peerDependencies:
@@ -1330,19 +1330,6 @@ __metadata:
     ink: ">=2.0.0"
     react: ">=16.8.0"
   checksum: b65481453cc13f726bdecf6378da30d55abb676e5eea5f6f38059d3cf7fa7e474c35ff10b760deecded246e9aabb68d22154c0e760860e2d05ca2d2ae60e5052
-  languageName: node
-  linkType: hard
-
-"ink-link@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "ink-link@npm:2.0.0"
-  dependencies:
-    prop-types: ^15.7.2
-    terminal-link: ^2.1.1
-  peerDependencies:
-    ink: ">=3.0.0"
-    react: ">=16.8.0"
-  checksum: cde7b0c4051ecc8fc8ca978f70e17348f24faed413dc72489ee7cc3a515eced03ec51471a092bd3aca549fcc4af29d0619e0e5230553a38dd2e79df653955b80
   languageName: node
   linkType: hard
 

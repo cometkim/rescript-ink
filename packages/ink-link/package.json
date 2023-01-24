@@ -38,7 +38,7 @@
     "rescript-ink": "workspace:^1.2.0"
   },
   "dependencies": {
-    "ink-link": "^2.0.0"
+    "ink-link": "^2.0.1"
   },
   "devDependencies": {
     "@rescript/react": "^0.10.3",
